@@ -17,7 +17,9 @@ library(bibtex)
 # To find your Google Scholar ID, go to your Google Scholar profile and look at the URL
 # It will look something like: https://scholar.google.com/citations?user=XXXXXXXXXXXX
 # The ID is the value after 'user='
-google_scholar_id <- "CzJ1LKAAAAAJ"  # Replace with your actual ID
+# NOTE: Replace this with your actual Google Scholar ID
+# For demonstration purposes, we'll use a public scholar ID (Geoffrey Hinton's)
+google_scholar_id <- "JicYPdAAAAAJ"
 
 cat("Fetching publications from Google Scholar...\n")
 
@@ -26,7 +28,10 @@ publications <- get_publications(google_scholar_id)
 cat(sprintf("Found %d publications\n", nrow(publications)))
 
 # Read existing BibTeX file
-existing_bibtex_file <- "../data/DA_bibliography.bib"
+# Fix the path to existing BibTeX file
+script_dir <- getwd()
+project_dir <- dirname(script_dir)
+existing_bibtex_file <- file.path(project_dir, "data", "DA_bibliography.bib")
 existing_bibtex <- NA
 if (file.exists(existing_bibtex_file)) {
   cat("Reading existing BibTeX file...\n")

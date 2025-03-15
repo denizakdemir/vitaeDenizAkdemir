@@ -60,7 +60,7 @@ I am a seasoned data scientist and statistical genomics professional with a vers
 
 # Publications
 
-```{r references, echo=FALSE, as.is=TRUE}
+```{r references, echo=FALSE, as.is=TRUE, warning=FALSE, message=FALSE}
 vitae::bibliography_entries("../../data/DA_bibliography.bib")
 ```
 

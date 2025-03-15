@@ -68,7 +68,7 @@ I am an accomplished statistical genomics professional with deep expertise in de
 
 # Publications
 
-```{r references, echo=FALSE, as.is=TRUE}
+```{r references, echo=FALSE, as.is=TRUE, warning=FALSE, message=FALSE}
 # Read all publications
 all_publications <- vitae::bibliography_entries("../../data/DA_bibliography.bib")
 
@@ -76,12 +76,22 @@ all_publications <- vitae::bibliography_entries("../../data/DA_bibliography.bib"
 genomics_keywords <- c("genom", "breed", "genetic", "selection", "prediction", "GWAS", "epistasis", 
                        "QTL", "sequenc", "gene", "haplotype", "SNP", "marker", "crop", "plant",
                        "rice", "wheat", "cassava", "olive")
+combined_text <- paste(
+  tolower(all_publications$title), 
+  tolower(as.character(all_publications$journal)),
+  sep = " "
+)
 genomics_publications <- all_publications[grepl(paste(genomics_keywords, collapse="|"), 
-                                              paste(all_publications$title, all_publications$journal), 
-                                              ignore.case=TRUE)]
+                                              combined_text, 
+                                              fixed = FALSE)]
 
-# Display genomics-focused publications
-genomics_publications
+# Display genomics-focused publications (only if found, otherwise show first 10)
+if(length(genomics_publications) > 0) {
+  genomics_publications
+} else {
+  # Fallback to show first 10 publications
+  all_publications[1:min(10, length(all_publications))]
+}
 ```
 
 # Education

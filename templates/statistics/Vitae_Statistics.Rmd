@@ -66,16 +66,23 @@ I am an accomplished statistician and biostatistician with extensive experience 
 
 # Publications
 
-```{r references, echo=FALSE, as.is=TRUE}
+```{r references, echo=FALSE, as.is=TRUE, warning=FALSE, message=FALSE}
 # Read all publications
 all_publications <- vitae::bibliography_entries("../../data/DA_bibliography.bib")
 
 # Filter for statistics-related publications
 stats_keywords <- c("statistic", "bayesian", "multivariate", "data science", "machine learning")
-stats_publications <- all_publications[grepl(paste(stats_keywords, collapse="|"), all_publications$title, ignore.case=TRUE)]
+stats_publications <- all_publications[grepl(paste(stats_keywords, collapse="|"), 
+                                            tolower(all_publications$title), 
+                                            fixed = FALSE)]
 
-# Display statistics-focused publications
-stats_publications
+# Display statistics-focused publications (only if found, otherwise show first 10)
+if(length(stats_publications) > 0) {
+  stats_publications
+} else {
+  # Fallback to show first 10 publications
+  all_publications[1:min(10, length(all_publications))]
+}
 ```
 
 # Education

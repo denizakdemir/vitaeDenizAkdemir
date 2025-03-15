@@ -44,7 +44,7 @@ library(vitae)
 # Publications
 
 ```{r references, echo=FALSE, as.is=TRUE}
-vitae::bibliography_entries("DA_bibliograpgy.bib")
+vitae::bibliography_entries("data/DA_bibliography.bib")
 ```
 
 # Education

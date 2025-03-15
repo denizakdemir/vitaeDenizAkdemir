@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Deniz Akdemir - CV Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .cv-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .cv-card {
+            width: 45%;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .cv-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .cv-card h3 {
+            margin-top: 0;
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        .cv-card p {
+            margin-bottom: 15px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dr. Deniz Akdemir</h1>
+        <p>A collection of specialized CV/resume versions for different career opportunities</p>
+    </div>
+
+    <h2>Available CV Versions</h2>
+    
+    <div class="cv-container">
+        <div class="cv-card">
+            <h3>General CV</h3>
+            <p>A comprehensive CV highlighting my versatile skill set spanning statistics, machine learning, and software development.</p>
+            <div class="buttons">
+                <a href="templates/general/preview.html" class="btn">Preview</a>
+                <a href="outputs/Vitae_General.pdf" class="btn">Download PDF</a>
+            </div>
+        </div>
+        
+        <div class="cv-card">
+            <h3>Statistics CV</h3>
+            <p>Focused on my expertise in statistics, biostatistics, and statistical applications in research and industry.</p>
+            <div class="buttons">
+                <a href="templates/statistics/preview.html" class="btn">Preview</a>
+                <a href="outputs/Vitae_Statistics.pdf" class="btn">Download PDF</a>
+            </div>
+        </div>
+        
+        <div class="cv-card">
+            <h3>Genomics CV</h3>
+            <p>Highlighting my work in statistical genomics, breeding program optimization, and computational genomics.</p>
+            <div class="buttons">
+                <a href="templates/genomics/preview.html" class="btn">Preview</a>
+                <a href="outputs/Vitae_Genomics.pdf" class="btn">Download PDF</a>
+            </div>
+        </div>
+        
+        <div class="cv-card">
+            <h3>AI/ML CV</h3>
+            <p>Emphasizing my machine learning and AI expertise, including deep learning, algorithm development, and production deployment.</p>
+            <div class="buttons">
+                <a href="templates/ai-ml/preview.html" class="btn">Preview</a>
+                <a href="outputs/Vitae_AI_ML.pdf" class="btn">Download PDF</a>
+            </div>
+        </div>
+        
+        <div class="cv-card">
+            <h3>Executive CV</h3>
+            <p>Focused on leadership competencies, strategic vision, team management, and driving innovation in data science.</p>
+            <div class="buttons">
+                <a href="templates/executive/preview.html" class="btn">Preview</a>
+                <a href="outputs/Vitae_Executive.pdf" class="btn">Download PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>This CV portfolio is managed as a GitHub repository. All templates and PDFs are automatically updated when changes are made.</p>
+        <p>&copy; 2025 Dr. Deniz Akdemir | <a href="https://github.com/denizakdemir/vitaeDenizAkdemir">GitHub Repository</a></p>
+    </div>
+</body>
+</html>

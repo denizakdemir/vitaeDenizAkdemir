@@ -102,14 +102,30 @@ I am a strategic leader with deep technical expertise in data science, statistic
 
 # Select Publications
 
-```{r references, echo=FALSE, as.is=TRUE}
+```{r references, echo=FALSE, as.is=TRUE, warning=FALSE, message=FALSE}
 # Read all publications
 all_publications <- vitae::bibliography_entries("../../data/DA_bibliography.bib")
 
-# Filter for leadership-related publications (first author or senior author positions)
-leader_pubs <- all_publications[1:5]  # Just showing top 5 for the executive CV
+# Get first-author publications (likely where you led the work)
+first_author_pattern <- "^Akdemir, D"
+first_author_pubs <- all_publications[grepl(first_author_pattern, all_publications$author)]
 
-# Display publications
+# If we found first-author pubs, use them, otherwise use most recent 5
+if(length(first_author_pubs) > 0) {
+  # Sort by date if possible and take most recent 5
+  if("date" %in% names(first_author_pubs)) {
+    sorted_pubs <- first_author_pubs[order(first_author_pubs$date, decreasing=TRUE)]
+    leader_pubs <- sorted_pubs[1:min(5, length(sorted_pubs))]
+  } else {
+    # If can't sort by date, just take first 5
+    leader_pubs <- first_author_pubs[1:min(5, length(first_author_pubs))]
+  }
+} else {
+  # Fallback to first 5 publications
+  leader_pubs <- all_publications[1:min(5, length(all_publications))]
+}
+
+# Display leadership-related publications
 leader_pubs
 ```
 

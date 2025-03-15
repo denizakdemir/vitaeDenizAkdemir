@@ -64,7 +64,7 @@ I am a dedicated machine learning and AI professional with a strong background i
 
 # Publications
 
-```{r references, echo=FALSE, as.is=TRUE}
+```{r references, echo=FALSE, as.is=TRUE, warning=FALSE, message=FALSE}
 # Read all publications
 all_publications <- vitae::bibliography_entries("../../data/DA_bibliography.bib")
 
@@ -72,12 +72,22 @@ all_publications <- vitae::bibliography_entries("../../data/DA_bibliography.bib"
 ai_ml_keywords <- c("machine learning", "deep learning", "artificial intelligence", "neural network", 
                     "prediction", "algorithm", "optimization", "data science", "bayesian", 
                     "ensemble", "modeling", "predictive", "computational")
+combined_text <- paste(
+  tolower(all_publications$title), 
+  tolower(as.character(all_publications$journal)),
+  sep = " "
+)
 ai_ml_publications <- all_publications[grepl(paste(ai_ml_keywords, collapse="|"), 
-                                           paste(all_publications$title, all_publications$journal), 
-                                           ignore.case=TRUE)]
+                                           combined_text, 
+                                           fixed = FALSE)]
 
-# Display AI/ML-focused publications
-ai_ml_publications
+# Display AI/ML-focused publications (only if found, otherwise show first 10)
+if(length(ai_ml_publications) > 0) {
+  ai_ml_publications
+} else {
+  # Fallback to show first 10 publications
+  all_publications[1:min(10, length(all_publications))]
+}
 ```
 
 # Education

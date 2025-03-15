@@ -3,6 +3,11 @@
 # Script to update bibliography from Google Scholar
 # Requires the 'scholar' package
 
+# Set working directory to the project root
+script_dir <- dirname(normalizePath(commandArgs(trailingOnly = FALSE)[grep("--file=", commandArgs(trailingOnly = FALSE))][1], winslash = "/"))
+project_dir <- dirname(script_dir)
+setwd(project_dir)
+
 # Install required packages if not already installed
 if (!require("scholar")) {
   install.packages("scholar", repos = "https://cloud.r-project.org")
@@ -28,10 +33,7 @@ publications <- get_publications(google_scholar_id)
 cat(sprintf("Found %d publications\n", nrow(publications)))
 
 # Read existing BibTeX file
-# Fix the path to existing BibTeX file
-script_dir <- getwd()
-project_dir <- dirname(script_dir)
-existing_bibtex_file <- file.path(project_dir, "data", "DA_bibliography.bib")
+existing_bibtex_file <- "data/DA_bibliography.bib"
 existing_bibtex <- NA
 if (file.exists(existing_bibtex_file)) {
   cat("Reading existing BibTeX file...\n")

@@ -3,14 +3,16 @@ graphics: yes
 name: "Dr. Deniz Akdemir"
 position: "Data Science & Statistical Genomics Professional"
 address: ""
-phone: "+1 607 262 6875 (USA) - +34 674 771 859 (Spain)"
+phone: "+1 607 262 6875"
 email: "deniz.akdemir.work@gmail.com"
 github: "denizakdemir"
 date: "`r format(Sys.Date(), '%B %Y')`"
 output: 
   vitae::moderncv:
     keep_tex: true
-csl: "csl/apa6-cv.csl"
+    includes:
+      in_header: ../../styles/header_include.tex
+csl: "../../csl/apa6-cv.csl"
 ---
 
 ```{r setup, include=FALSE}

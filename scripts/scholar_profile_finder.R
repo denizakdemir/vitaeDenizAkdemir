@@ -3,6 +3,11 @@
 # Helper script to find a Google Scholar profile and ID
 # Requires the 'scholar' package
 
+# Set working directory to the project root
+script_dir <- dirname(normalizePath(commandArgs(trailingOnly = FALSE)[grep("--file=", commandArgs(trailingOnly = FALSE))][1], winslash = "/"))
+project_dir <- dirname(script_dir)
+setwd(project_dir)
+
 # Install required packages if not already installed
 if (!require("scholar")) {
   install.packages("scholar", repos = "https://cloud.r-project.org")

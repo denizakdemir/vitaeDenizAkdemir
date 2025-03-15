@@ -3,6 +3,11 @@
 # Simple script to demonstrate updating bibliography
 # Just reports number of publications from Google Scholar
 
+# Set working directory to the project root
+script_dir <- dirname(normalizePath(commandArgs(trailingOnly = FALSE)[grep("--file=", commandArgs(trailingOnly = FALSE))][1], winslash = "/"))
+project_dir <- dirname(script_dir)
+setwd(project_dir)
+
 # Load required libraries
 library(scholar)
 

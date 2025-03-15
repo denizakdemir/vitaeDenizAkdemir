@@ -28,6 +28,11 @@ jobs:
           texlive-fonts-recommended \
           texlive-latex-extra
         Rscript -e 'install.packages(c("vitae", "rmarkdown", "bibtex", "knitr", "scholar"))'
+        # Make sure all style files are available to LaTeX
+        mkdir -p ~/.texmf/tex/latex/moderncv
+        cp -r styles/moderncv/* ~/.texmf/tex/latex/moderncv/
+        mkdir -p ~/.texmf/tex/latex/awesome-cv
+        cp -r styles/awesome-cv/* ~/.texmf/tex/latex/awesome-cv/
     
     - name: Generate General CV
       run: |

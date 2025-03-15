@@ -3,6 +3,11 @@
 # Script to generate all CV variants
 # Requires the 'rmarkdown' package
 
+# Set working directory to the project root
+script_dir <- dirname(normalizePath(commandArgs(trailingOnly = FALSE)[grep("--file=", commandArgs(trailingOnly = FALSE))][1], winslash = "/"))
+project_dir <- dirname(script_dir)
+setwd(project_dir)
+
 # Install required packages if not already installed
 if (!require("rmarkdown")) {
   install.packages("rmarkdown", repos = "https://cloud.r-project.org")
@@ -16,15 +21,15 @@ if (!require("vitae")) {
 
 # Define paths to CV templates
 templates <- c(
-  general = "../templates/general/Vitae_General.Rmd",
-  statistics = "../templates/statistics/Vitae_Statistics.Rmd",
-  genomics = "../templates/genomics/Vitae_Genomics.Rmd",
-  ai_ml = "../templates/ai-ml/Vitae_AI_ML.Rmd",
-  executive = "../templates/executive/Vitae_Executive.Rmd"
+  general = "templates/general/Vitae_General.Rmd",
+  statistics = "templates/statistics/Vitae_Statistics.Rmd",
+  genomics = "templates/genomics/Vitae_Genomics.Rmd",
+  ai_ml = "templates/ai-ml/Vitae_AI_ML.Rmd",
+  executive = "templates/executive/Vitae_Executive.Rmd"
 )
 
 # Define output directory
-output_dir <- "../outputs"
+output_dir <- "outputs"
 
 # Create output directory if it doesn't exist
 if (!dir.exists(output_dir)) {

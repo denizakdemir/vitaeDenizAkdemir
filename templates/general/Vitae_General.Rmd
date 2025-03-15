@@ -1,7 +1,7 @@
 ---
 graphics: yes
 name: "Dr. Deniz Akdemir"
-position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+position: "Data Science & Statistical Genomics Professional"
 address: ""
 phone: "+1 607 262 6875 (USA) - +34 674 771 859 (Spain)"
 email: "deniz.akdemir.work@gmail.com"
@@ -18,13 +18,30 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 ```
 
-# Core Skills
+# Professional Summary
 
-- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
-- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
-- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
-- **Software Development:** Development of research and commercial grade software.
-- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
+I am a seasoned data scientist and statistical genomics professional with a versatile skill set spanning statistics, machine learning, and software development. Through effective management and cross-functional teamwork, I bring academic rigor and commercial insight to complex data challenges, ensuring both high-quality results and impactful project outcomes.
+
+# Key Areas of Expertise
+
+- **Statistical Genomics:**
+  - Comprehensive knowledge of genomic selection, GWAS, and epistasis
+  - Leveraging multi-trait models and genotype-by-environment interactions
+  - Enhancing breeding programs through advanced data-driven strategies
+
+- **Statistics & Data Analysis:**
+  - Multivariate analysis, high-dimensional modeling, and Bayesian inference
+  - Machine learning and deep learning for predictive analytics
+  - Biostatistics applications in research and industry
+
+- **Technical Proficiencies:**
+  - Skilled in R, SAS, Python, and C++ for robust statistical computing
+  - Development of both research and commercial-grade software
+
+- **Leadership & Management:**
+  - Strong project management, strategic planning, and budget oversight
+  - Team leadership with a focus on innovation and collaborative research
+  - Proven track record in grant writing and intellectual property management
 
 
 # Career Summary

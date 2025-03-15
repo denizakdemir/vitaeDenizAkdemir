@@ -18,13 +18,38 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 ```
 
-# Core Skills
+# Professional Summary
 
-- **Statistical Genomics:** Extensive experience in genomic selection, multi-trait methodologies, genomic prediction, genome-wide association studies (GWAS), models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
-- **Breeding Program Optimization:** Development of algorithms and methodologies for optimizing breeding programs through genetic algorithms and multi-objective optimization.
-- **Computational Genomics:** Development of software tools for analyzing genomic data, including tools for genotype imputation, population structure analysis, and genomic relationship matrices.
-- **Multi-omics Integration:** Expertise in combining heterogeneous genomic, phenotypic, and environmental datasets for improved prediction and selection.
-- **Applied Genomics:** Practical applications in plant and animal breeding, including work with diverse crops (rice, wheat, cassava, olive) and animal systems (stem cell transplants).
+I am an accomplished statistical genomics professional with deep expertise in developing advanced methodologies for genomic prediction and selection. My work focuses on optimizing breeding programs and creating computational tools that integrate complex genomic, phenotypic, and environmental data to enhance agricultural and biomedical outcomes.
+
+# Key Areas of Expertise
+
+- **Statistical Genomics:**
+  - Genomic selection, multi-trait methodologies, genomic prediction
+  - Genome-Wide Association Studies (GWAS)
+  - Epistatic models and genotype-by-environment interaction analysis
+  - Optimization of plant and animal breeding programs
+
+- **Statistics & Biostatistics:**
+  - Multivariate analysis and high-dimensional data modeling
+  - Bayesian methods, frequentist approaches, and robust inference
+  - Machine learning and deep learning in biological research
+  - Applied data science and experimental design
+
+- **Computational Genomics:**
+  - Development of software tools for analyzing genomic data
+  - Tools for genotype imputation, population structure analysis, and genomic relationships
+  - Multi-omics integration of heterogeneous data for improved prediction
+
+- **Applied Genomics:**
+  - Practical applications in plant breeding (rice, wheat, cassava, olive)
+  - Clinical applications in stem cell transplantation
+  - Implementation of genomic selection in commercial breeding programs
+
+- **Leadership & Management:**
+  - Strategic planning and project management for genomic initiatives
+  - Team leadership and cross-disciplinary collaboration
+  - Grant writing and intellectual property development
 
 
 # Career Summary

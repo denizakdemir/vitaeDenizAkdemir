@@ -1,7 +1,7 @@
 ---
 graphics: yes
 name: "Dr. Deniz Akdemir"
-position: "AI/ML Scientist - Data Science Expert"
+position: "Machine Learning & AI Specialist with Genomic Expertise"
 address: ""
 phone: "+1 607 262 6875 (USA) - +34 674 771 859 (Spain)"
 email: "deniz.akdemir.work@gmail.com"
@@ -18,13 +18,34 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 ```
 
-# Core Skills
+# Professional Summary
 
-- **Machine Learning & AI:** Expertise in supervised and unsupervised learning, deep learning architectures, reinforcement learning, predictive modeling, and AI-driven optimization algorithms.
-- **Applied ML/AI:** Experience applying ML/AI techniques to healthcare, genomics, clinical data, and optimization problems.
-- **Data Science:** Data pre-processing, feature engineering, model evaluation, ensemble methods, and deployment of ML/AI models in production environments.
-- **ML/AI Programming:** Proficient in Python (with TensorFlow, PyTorch, scikit-learn), R, and C++ for implementing and scaling ML/AI algorithms.
-- **Big Data & Cloud Computing:** Experience with large-scale data processing, distributed computing, and cloud-based ML/AI solutions.
+I am a dedicated machine learning and AI professional with a strong background in statistical genomics and data science. My expertise encompasses designing cutting-edge algorithms, building scalable software solutions, and leading teams in developing advanced applications across genomics and other high-impact fields.
+
+# Key Areas of Expertise
+
+- **Statistical Genomics & Advanced Modeling:**
+  - Genomic selection, multi-trait approaches, GWAS, and epistasis modeling
+  - Integration of genotype-by-environment interactions into AI models
+  - Optimization frameworks for plant and animal breeding
+
+- **Machine Learning & Deep Learning:**
+  - End-to-end modeling pipelines for supervised and unsupervised learning
+  - High-dimensional data handling, dimensionality reduction, feature engineering
+  - Bayesian deep learning, ensemble methods, and model interpretability
+
+- **Statistical & Computational Skills:**
+  - Programming in R, SAS, Python, and C++ for algorithm design and deployment
+  - Development of computationally efficient, scalable AI solutions
+  - Deployment of machine learning models in research and production environments
+
+- **Software Development & Architecture:**
+  - Building robust, modular software with version control and CI/CD integration
+  - API design, cloud computing, and containerization for scalable services
+
+- **Project Management & Leadership:**
+  - Leading multidisciplinary AI projects and managing cross-functional teams
+  - Grant writing, patent drafting, and managing budgets for innovative research
 
 
 # Career Summary

@@ -1,0 +1,78 @@
+---
+graphics: yes
+name: "Dr. Deniz Akdemir"
+position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+address: ""
+phone: "+1 607 262 6875 (USA) - +34 674 771 859 (Spain)"
+email: "deniz.akdemir.work@gmail.com"
+github: "denizakdemir"
+date: "`r format(Sys.Date(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    keep_tex: true
+csl: "csl/apa6-cv.csl"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Core Skills
+
+- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
+- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
+- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
+- **Software Development:** Development of research and commercial grade software.
+- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
+
+
+# Career Summary
+-   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
+-   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
+- **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** Conducted research on methods for combining heterogeneous genomic and phenotypic datasets and prepared statistical software for data analysis.
+- **Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):** Provided statistical consulting services for researchers at Cornell University, including the preparation and presentation of statistics workshops.
+- **Postdoctoral Research Associate, Department of Plant Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 - 2017):** Focused on research developing new methodologies in genomic selection and prediction, mixed models, and machine learning, advising graduate students and preparing statistical software.
+- **Visiting Assistant Professor, Department of Statistics and Actuarial Science, University of Central Florida, Orlando, FL, USA (2010 - 2011):** Responsibilities included teaching Data Mining Methodology, Theoretical Statistics, Applied Time Series Analysis, and Nonparametric Statistics.
+- **Visiting Assistant Professor, Department of Mathematics and Statistics, Ohio Northern University, Ada, OH, USA (2009 - 2010):** Taught Statistics for Professionals, Statistics for Engineers, and Statistical Computing, catering to various undergraduate levels.
+
+# Workshops and Training Sessions
+
+- **Genomic Assisted Breeding Workshops:** Conducted workshops in the USA, Ireland, Spain, and Belgium, educating the agricultural community on genomic technologies.
+- **Public Speaking:** Presented at various international conferences including EFI conference in Geneva and ASHI Annual Meeting in San Antonio.
+
+# Publications
+
+```{r references, echo=FALSE, as.is=TRUE}
+vitae::bibliography_entries("DA_bibliograpgy.bib")
+```
+
+# Education
+
+- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
+- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
+- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
+- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
+
+# Professional References
+
+- **Dr. Yung-Tsi Bolon**
+  - **Affiliation:** Director, Immunobiology & Bioinformatics Research, NMDP, Minneapolis, Minnesota, United States
+  - **Relationship:** Supervisor at the National Marrow Donor Program
+  - **Contact:** ybolon@nmdp.org
+- **Dr. Julio Isidro-Sanchez**
+  - **Affiliation:** Associate Professor: Centro de Biotecnologia y Genomica de Plantas, Universidad Politecnica de Madrid, Instituto Nacional de Investigacion y Tecnologia Agraria y Alimentaria, Campus de Montegancedo - UPM, 28223-Pozuelo de Alarcon, Madrid, Spain
+  - **Relationship:** Expert in plant breeding and genetics, collaborator on various projects
+  - **Contact:** j.isidro@upm.es
+- **Dr. Jhonathan Pedroso**
+  - **Affiliation:** Research Scientist at Corteva Agriscience, Corteva, Johnston, Iowa, USA
+  - **Relationship:** Industry partner in genomic tool development, contributed to software enhancements
+  - **Contact:** jhowpd@gmail.com
+- **Dr. Lynn Johnson**
+  - **Affiliation:** Interim Director and Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA
+  - **Relationship:** Coworker at the Cornell Statistical Consulting Unit
+  - **Contact:** lms86@cornell.edu
+- **Dr. Roberto Fritsche Neto**
+  - **Affiliation:** Assistant Professor, Department of Plant, Environmental Management & Soil Sciences, LSU
+  - **Relationship:** Collaborator on various projects
+  - **Contact:** rneto1@lsu.edu

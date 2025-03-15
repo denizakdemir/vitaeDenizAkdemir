@@ -1,0 +1,59 @@
+name: Generate CVs
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'templates/**'
+      - 'data/**'
+      - '.github/workflows/generate-cv.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: rocker/verse:latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Install dependencies
+      run: |
+        apt-get update
+        apt-get install -y --no-install-recommends \
+          ghostscript \
+          pandoc \
+          texlive-xetex \
+          texlive-fonts-recommended \
+          texlive-latex-extra
+        Rscript -e 'install.packages(c("vitae", "rmarkdown", "bibtex", "knitr", "scholar"))'
+    
+    - name: Generate General CV
+      run: |
+        Rscript -e 'rmarkdown::render("templates/general/Vitae_General.Rmd", output_dir = "outputs")'
+    
+    - name: Generate Statistics CV
+      run: |
+        Rscript -e 'rmarkdown::render("templates/statistics/Vitae_Statistics.Rmd", output_dir = "outputs")'
+    
+    - name: Generate Genomics CV
+      run: |
+        Rscript -e 'rmarkdown::render("templates/genomics/Vitae_Genomics.Rmd", output_dir = "outputs")'
+    
+    - name: Generate AI/ML CV
+      run: |
+        Rscript -e 'rmarkdown::render("templates/ai-ml/Vitae_AI_ML.Rmd", output_dir = "outputs")'
+    
+    - name: Upload CV artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: cv-pdfs
+        path: outputs/*.pdf
+        
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add outputs/*.pdf
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update CV PDFs [skip ci]" && git push)

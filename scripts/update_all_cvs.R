@@ -19,7 +19,8 @@ templates <- c(
   general = "../templates/general/Vitae_General.Rmd",
   statistics = "../templates/statistics/Vitae_Statistics.Rmd",
   genomics = "../templates/genomics/Vitae_Genomics.Rmd",
-  ai_ml = "../templates/ai-ml/Vitae_AI_ML.Rmd"
+  ai_ml = "../templates/ai-ml/Vitae_AI_ML.Rmd",
+  executive = "../templates/executive/Vitae_Executive.Rmd"
 )
 
 # Define output directory

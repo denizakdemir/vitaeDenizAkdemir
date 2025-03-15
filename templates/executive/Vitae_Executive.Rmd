@@ -1,0 +1,136 @@
+---
+graphics: yes
+name: "Dr. Deniz Akdemir"
+position: "Strategic Leadership in Data Science & Genomics"
+address: ""
+phone: "+1 607 262 6875 (USA) - +34 674 771 859 (Spain)"
+email: "deniz.akdemir.work@gmail.com"
+github: "denizakdemir"
+date: "`r format(Sys.Date(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    keep_tex: true
+csl: "../csl/apa6-cv.csl"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Executive Profile
+
+I am a strategic leader with deep technical expertise in data science, statistical genomics, and computational biology. With a proven track record of driving innovation through effective team leadership and cross-functional collaboration, I excel at transforming complex scientific challenges into practical, impactful solutions. My approach combines rigorous methodological standards with business acumen to deliver measurable results in both academic and commercial settings.
+
+# Leadership Competencies
+
+- **Strategic Vision & Execution:**
+  - Translating organizational objectives into actionable research plans
+  - Aligning technical innovation with business priorities
+  - Delivering complex scientific projects on time and within budget
+
+- **Team Leadership & Development:**
+  - Building and mentoring high-performing multidisciplinary teams
+  - Fostering collaborative environments that maximize team productivity
+  - Developing talent and creating career growth opportunities for team members
+
+- **Resource Management:**
+  - Securing and managing grant funding and commercial research budgets
+  - Optimizing allocation of personnel and technical resources
+  - Strategic planning for sustainable research and technology development
+
+- **Stakeholder Management:**
+  - Effectively communicating technical concepts to diverse audiences
+  - Building productive partnerships across academic and industry boundaries
+  - Bridging the gap between scientific innovation and practical application
+
+- **Innovation Management:**
+  - Patent development and intellectual property strategy
+  - Identifying commercial opportunities from scientific breakthroughs
+  - Creating frameworks for sustainable scientific innovation
+
+# Career Highlights
+
+- **Led multidisciplinary research teams** across international research institutions, managing collaborative projects with budgets exceeding $1M
+- **Developed patentable methodologies** in genomic optimization with commercial applications
+- **Secured multiple competitive grants** through effective proposal development and presentation
+- **Published over 30 peer-reviewed papers** in high-impact journals, demonstrating scientific leadership
+- **Established international partnerships** between academic institutions and commercial enterprises
+
+# Leadership Experience
+
+-   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** 
+    - Lead strategic initiatives in donor optimization using advanced analytics
+    - Develop and implement novel machine learning approaches for clinical data
+    - Oversee grant development and patent applications for innovative methodologies
+    - Collaborate with cross-functional teams to translate research into clinical applications
+
+-   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** 
+    - Directed statistical and machine learning analyses of stem cell transplant data
+    - Coordinated with clinical teams to ensure research relevance to medical applications
+    - Managed data science workflows and quality control processes
+    - Presented research findings to executive stakeholders
+
+- **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** 
+    - Led research on methods for combining heterogeneous genomic and phenotypic datasets
+    - Supervised junior researchers and graduate students
+    - Developed international research collaborations
+    - Secured additional project funding through grant applications
+
+- **Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):** 
+    - Managed statistical consulting services for diverse research departments
+    - Developed and presented statistics workshops to faculty and students
+    - Recommended methodological approaches for complex research questions
+    - Ensured statistical rigor in university-wide research initiatives
+
+# Strategic Initiatives
+
+- **Genomic Optimization Platform:** Led the conceptual development and implementation of a computational framework for optimizing breeding programs, resulting in improved efficiency and outcomes.
+
+- **Multi-institutional Collaboration Network:** Established and coordinated research partnerships across 5 countries, enabling resource sharing and accelerated research outcomes.
+
+- **Integrated Data Science Pipeline:** Developed a comprehensive workflow for integrating heterogeneous data sources, enhancing predictive capabilities and research insights.
+
+- **Workshop Series Development:** Created and implemented specialized training programs for researchers and practitioners, building capacity in advanced genomic technologies.
+
+# Education
+
+- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
+- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
+- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
+- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
+
+# Select Publications
+
+```{r references, echo=FALSE, as.is=TRUE}
+# Read all publications
+all_publications <- vitae::bibliography_entries("../../data/DA_bibliography.bib")
+
+# Filter for leadership-related publications (first author or senior author positions)
+leader_pubs <- all_publications[1:5]  # Just showing top 5 for the executive CV
+
+# Display publications
+leader_pubs
+```
+
+# Professional Network
+
+- **Dr. Yung-Tsi Bolon**
+  - **Position:** Director, Immunobiology & Bioinformatics Research, NMDP
+  - **Collaboration Area:** Strategic development of genomic applications in clinical settings
+
+- **Dr. Julio Isidro-Sanchez**
+  - **Position:** Associate Professor, Universidad Politecnica de Madrid
+  - **Collaboration Area:** International research partnerships and funding initiatives
+
+- **Dr. Jhonathan Pedroso**
+  - **Position:** Research Scientist at Corteva Agriscience
+  - **Collaboration Area:** Industry-academic partnerships and technology transfer
+
+- **Dr. Lynn Johnson**
+  - **Position:** Interim Director, Cornell Statistical Consulting Unit
+  - **Collaboration Area:** Statistical methodology and education initiatives
+
+- **Dr. Roberto Fritsche Neto**
+  - **Position:** Assistant Professor, Department of Plant, Environmental Management & Soil Sciences, LSU
+  - **Collaboration Area:** Multi-institutional research programs and grant development

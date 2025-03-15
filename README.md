@@ -9,12 +9,16 @@ This repository contains multiple versions of my CV/resume, each tailored to hig
   - **statistics/**: CV focused on Statistics expertise
   - **genomics/**: CV focused on Statistical Genomics expertise
   - **ai-ml/**: CV focused on AI and Machine Learning expertise
+  - **executive/**: CV focused on leadership and management expertise
   
 - **data/**: Contains data files
   - **DA_bibliography.bib**: BibTeX file with all publications
   
 - **scripts/**: Scripts for automating CV generation and updates
   - **update_bibliography.R**: Script to update bibliography from Google Scholar
+  - **simple_bibliography_update.R**: Simplified script for bibliography updates
+  - **scholar_profile_finder.R**: Interactive tool to find your Google Scholar ID
+  - **update_all_cvs.R**: Script to generate all CV variants at once
 
 - **fonts/**: Contains font files required for CV templates
 - **csl/**: Contains citation style files

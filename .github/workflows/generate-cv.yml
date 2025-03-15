@@ -44,6 +44,10 @@ jobs:
     - name: Generate AI/ML CV
       run: |
         Rscript -e 'rmarkdown::render("templates/ai-ml/Vitae_AI_ML.Rmd", output_dir = "outputs")'
+        
+    - name: Generate Executive CV
+      run: |
+        Rscript -e 'rmarkdown::render("templates/executive/Vitae_Executive.Rmd", output_dir = "outputs")'
     
     - name: Upload CV artifacts
       uses: actions/upload-artifact@v2

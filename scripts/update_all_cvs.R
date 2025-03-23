@@ -3,6 +3,9 @@
 # Script to generate all CV variants
 # Requires the 'rmarkdown' package
 
+# Set the absolute path to the bibliography file
+bib_file <- "/Users/denizakdemir/Dropbox/dakdemirGithub/GitHubProjects/vitaeDenizAkdemir/data/DA_bibliography.bib"
+
 # Set working directory to the project root
 script_dir <- dirname(normalizePath(commandArgs(trailingOnly = FALSE)[grep("--file=", commandArgs(trailingOnly = FALSE))][1], winslash = "/"))
 project_dir <- dirname(script_dir)
@@ -39,12 +42,16 @@ if (!dir.exists(output_dir)) {
 # Render each template
 for (name in names(templates)) {
   cat(sprintf("Generating %s CV...\n", name))
+
+  params <- list(bib_file = bib_file)
   
   # Render the Rmd file
   rmarkdown::render(
     input = templates[[name]],
     output_dir = output_dir,
-    quiet = TRUE
+    output_format = "pdf_document",
+    quiet = TRUE,
+    params = params
   )
   
   cat(sprintf("%s CV generated successfully\n", name))

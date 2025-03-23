@@ -11,7 +11,7 @@
 
 
 
-<title>Vitae0.knit</title>
+<title>Vitae_AI_ML.knit</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -352,93 +352,212 @@ display: none;
 </div>
 
 
-<p>graphics: yes name: Deniz surname: Akdemir position: “Statistician,
-Clinical Data Scientist” address: “” phone: +1 607 262 6875 email: “<a href="mailto:deniz.akdemir.work@gmail.com" class="email">deniz.akdemir.work@gmail.com</a>” github: denizakdemir
-date: “April 2024” ##profilepic: pic.jpg headcolor: 414141 # use black
-color output: vitae::awesomecv —</p>
-<div id="contact-information" class="section level1">
-<h1>Contact Information</h1>
+<div id="professional-profile" class="section level1">
+<h1>Professional Profile</h1>
+<p>Deniz Akdemir is an AI/ML specialist with extensive experience in
+machine learning, data analytics, and computational intelligence. His
+work focuses on developing cutting-edge algorithms and AI solutions for
+complex data challenges.</p>
+</div>
+<div id="core-competencies" class="section level1">
+<h1>Core Competencies</h1>
 <ul>
-<li>Phone: +1 607 262 6875</li>
-<li>Email: <a href="mailto:deniz.akdemir.work@gmail.com" class="email">deniz.akdemir.work@gmail.com</a></li>
-<li>GitHub: <a href="https://github.com/denizakdemir">denizakdemir</a></li>
+<li>Machine Learning &amp; Deep Learning</li>
+<li>Data Analytics and Visualization</li>
+<li>Algorithm Development</li>
+<li>Statistical Modeling</li>
+<li>Research &amp; Innovation</li>
 </ul>
 </div>
-<div id="core-skills" class="section level1">
-<h1>Core Skills</h1>
+<div id="professional-experience" class="section level1">
+<h1>Professional Experience</h1>
 <ul>
-<li><strong>Statistics</strong>: Multivariate statistics, high
-dimensional data, mixed models, Bayesian statistics, machine learning,
-deep learning, big data and data science.</li>
-<li><strong>Statistical Computation</strong>: R, C++, Python.</li>
-<li><strong>Statistical Genomics</strong>: Genomic selection for plant
-breeding, multi-trait selection methodologies, balancing multiple
-breeding objectives, genomic prediction, models for epistasis, genotype
-by environment interactions, multi-trait models, genome-wide association
-studies.</li>
-</ul>
-</div>
-<div id="career-summary" class="section level1">
-<h1>Career Summary</h1>
-<ul>
-<li><p><strong>Clinical Data Scientist, National Marrow Donor Program,
-Minneapolis, USA (2021 - Current):</strong> Engaged in statistical and
-machine learning analysis of stem cell transplant data, focusing on
-research into donor optimization.</p></li>
-<li><p><strong>Postdoctoral Research Associate, School of Agriculture
-and Food Science, University College Dublin, Dublin, Ireland (2019 -
-2021):</strong> Conducted research on methods for combining
-heterogeneous genomic and phenotypic datasets and prepared statistical
-software for data analysis.</p></li>
-<li><p><strong>Statistical Consultant, Cornell Statistical Consulting
-Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):</strong>
-Provided statistical consulting services for researchers at Cornell
-University, including the preparation and presentation of statistics
-workshops.</p></li>
-<li><p><strong>Postdoctoral Research Associate, Department of Plant
-Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 -
-2017):</strong> Focused on research developing new methodologies in
-genomic selection and prediction, mixed models, and machine learning,
-advising graduate students and preparing statistical software.</p></li>
-<li><p><strong>Visiting Assistant Professor, Department of Statistics
-and Actuarial Science, University of Central Florida, Orlando, FL, USA
-(2010 - 2011):</strong> Responsibilities included teaching Data Mining
-Methodology, Theoretical Statistics, Applied Time Series Analysis, and
-Nonparametric Statistics.</p></li>
-<li><p><strong>Visiting Assistant Professor, Department of Mathematics
-and Statistics, Ohio Northern University, Ada, OH, USA (2009 -
-2010):</strong> Taught Statistics for Professionals, Statistics for
-Engineers, and Statistical Computing, catering to various undergraduate
-levels.</p></li>
-</ul>
-</div>
-<div id="publications" class="section level1">
-<h1>Publications</h1>
-<div id="refs-3bacca9041204e581cd69b3472bc94b5">
-
-</div>
-</div>
-<div id="presentations" class="section level1">
-<h1>Presentations</h1>
-<ul>
-<li>2023: Navigating the trade-offs of HSCTs using machine learning
-driven decision support tools. TANDEM Meeting, Sabal, Orlando, FL.</li>
-<li>2023: Elucidating the donor age, relatedness, and HLA matching on
-HCT outcomes using ML and classical statistical methods. ASHI Annual
-Meeting, San Antonio, TX.</li>
+<li><strong>Senior Clinical Data Scientist</strong>, National Marrow
+Donor Program (2023 - Current)</li>
+<li><strong>Clinical Data Scientist</strong>, National Marrow Donor
+Program (2021 - 2023)</li>
+<li><strong>Postdoctoral Research Associate</strong>, University College
+Dublin (2019 - 2021)</li>
 </ul>
 </div>
 <div id="education" class="section level1">
 <h1>Education</h1>
 <ul>
-<li><strong>Ph.D. in Statistics</strong>, Bowling Green State
-University, Bowling Green, OH, USA, 2009.</li>
+<li><strong>PhD. in Statistics</strong>, Bowling Green State University
+(2009)</li>
+<li><strong>M.A. in Applied Statistics</strong>, Bowling Green State
+University (2004)</li>
+<li><strong>M.S. in Statistics</strong>, Middle East Technical
+University (2003)</li>
+<li><strong>B.A. in Business Administration</strong>, Middle East
+Technical University, Ankara, Turkey, 1999.</li>
+</ul>
+</div>
+<div id="research-interests" class="section level1">
+<h1>Research Interests</h1>
+<p>His research focuses on integrating statistical methods with deep
+learning to create robust and interpretable AI models. He is
+particularly interested in the application of machine learning in
+solving real-world problems.</p>
+</div>
+<div id="collaboration-network" class="section level1">
+<h1>Collaboration Network</h1>
+<pre class="r"><code>library(scholar)
+library(igraph)
+library(visNetwork)
+
+# Get Google Scholar ID from environment variable
+scholar_id &lt;- Sys.getenv(&quot;SCHOLAR_ID&quot;)
+
+if(nchar(scholar_id) &gt; 0) {
+  coauthors &lt;- scholar::get_coauthors(scholar_id)
+  
+  # Create network graph
+  g &lt;- graph_from_data_frame(coauthors$edges, directed = FALSE)
+  
+  # Plot interactive network
+  visNetwork(nodes = coauthors$nodes, edges = coauthors$edges) |&gt; 
+    visOptions(highlightNearest = TRUE, nodesIdSelection = TRUE)
+} else {
+  cat(&quot;Google Scholar ID not configured - skipping network visualization&quot;)
+}</code></pre>
+<pre><code>## Google Scholar ID not configured - skipping network visualization</code></pre>
+</div>
+<div id="core-skills" class="section level1">
+<h1>Core Skills</h1>
+<ul>
+<li><strong>Statistical Genomics:</strong> Genomic selection,
+multi-trait methodologies, genomic prediction, GWAS, models for
+epistasis and genotype by environment interactions, optimization of
+plant and animal breeding programs.</li>
+<li><strong>Statistics:</strong> Multivariate analysis, high-dimensional
+data modeling, Bayesian methods, machine learning, deep learning, data
+science, biostatistics.</li>
+<li><strong>Statistical Computation:</strong> Proficient in R, SAS,
+Python, and C++ for statistical programming and analysis.</li>
+<li><strong>Software Development:</strong> Development of research and
+commercial grade software.</li>
+<li><strong>Management and administration:</strong> Strategic planning,
+project management, team leadership, grant/patent writing, budgeting,
+accounting.</li>
+</ul>
+</div>
+<div id="career-summary" class="section level1">
+<h1>Career Summary</h1>
+<ul>
+<li><strong>Senior Clinical Data Scientist, National Marrow Donor
+Program, Minneapolis, USA (2023 - Current):</strong> Engaged in
+statistical and machine learning analysis of stem cell transplant data,
+focusing on research into donor optimization. Applied for grants and
+submitted manuscripts to peer-reviewed journals. Wrote patent
+applications.</li>
+<li><strong>Clinical Data Scientist, National Marrow Donor Program,
+Minneapolis, USA (2021 - 2023):</strong> Engaged in statistical and
+machine learning analysis of stem cell transplant data, focusing on
+research into donor optimization.</li>
+<li><strong>Postdoctoral Research Associate, School of Agriculture and
+Food Science, University College Dublin, Dublin, Ireland (2019 -
+2021):</strong> Conducted research on methods for combining
+heterogeneous genomic and phenotypic datasets and prepared statistical
+software for data analysis.</li>
+<li><strong>Statistical Consultant, Cornell Statistical Consulting Unit,
+Cornell University, Ithaca, NY, USA (2017 - 2019):</strong> Provided
+statistical consulting services for researchers at Cornell University,
+including the preparation and presentation of statistics workshops.</li>
+<li><strong>Postdoctoral Research Associate, Department of Plant
+Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 -
+2017):</strong> Focused on research developing new methodologies in
+genomic selection and prediction, mixed models, and machine learning,
+advising graduate students and preparing statistical software.</li>
+<li><strong>Visiting Assistant Professor, Department of Statistics and
+Actuarial Science, University of Central Florida, Orlando, FL, USA (2010
+- 2011):</strong> Responsibilities included teaching Data Mining
+Methodology, Theoretical Statistics, Applied Time Series Analysis, and
+Nonparametric Statistics.</li>
+<li><strong>Visiting Assistant Professor, Department of Mathematics and
+Statistics, Ohio Northern University, Ada, OH, USA (2009 -
+2010):</strong> Taught Statistics for Professionals, Statistics for
+Engineers, and Statistical Computing, catering to various undergraduate
+levels.</li>
+</ul>
+</div>
+<div id="workshops-and-training-sessions" class="section level1">
+<h1>Workshops and Training Sessions</h1>
+<ul>
+<li><strong>Genomic Assisted Breeding Workshops:</strong> Conducted
+workshops in the USA, Ireland, Spain, and Belgium, educating the
+agricultural community on genomic technologies.</li>
+<li><strong>Public Speaking:</strong> Presented at various international
+conferences including EFI conference in Geneva and ASHI Annual Meeting
+in San Antonio.</li>
+</ul>
+</div>
+<div id="publications" class="section level1">
+<h1>Publications</h1>
+<div id="refs-2a48b45d2f5410d0337ebaf4b173be9a">
+
+</div>
+</div>
+<div id="education-1" class="section level1">
+<h1>Education</h1>
+<ul>
+<li><strong>PhD. in Statistics</strong>, Bowling Green State University,
+Bowling Green, OH, USA, 2009.</li>
 <li><strong>M.A. in Applied Statistics</strong>, Bowling Green State
 University, Bowling Green, OH, USA, 2004.</li>
 <li><strong>M.S. in Statistics</strong>, Middle East Technical
 University, Ankara, Turkey, 2003.</li>
 <li><strong>B.A. in Business Administration</strong>, Middle East
 Technical University, Ankara, Turkey, 1999.</li>
+</ul>
+</div>
+<div id="professional-references" class="section level1">
+<h1>Professional References</h1>
+<ul>
+<li><strong>Dr. Yung-Tsi Bolon</strong>
+<ul>
+<li><strong>Affiliation:</strong> Director, Immunobiology &amp;
+Bioinformatics Research, NMDP, Minneapolis, Minnesota, United
+States</li>
+<li><strong>Relationship:</strong> Supervisor at the National Marrow
+Donor Program</li>
+<li><strong>Contact:</strong> <a href="mailto:ybolon@nmdp.org" class="email">ybolon@nmdp.org</a></li>
+</ul></li>
+<li><strong>Dr. Julio Isidro-Sanchez</strong>
+<ul>
+<li><strong>Affiliation:</strong> Associate Professor: Centro de
+Biotecnologia y Genomica de Plantas, Universidad Politecnica de Madrid,
+Instituto Nacional de Investigacion y Tecnologia Agraria y Alimentaria,
+Campus de Montegancedo - UPM, 28223-Pozuelo de Alarcon, Madrid,
+Spain</li>
+<li><strong>Relationship:</strong> Expert in plant breeding and
+genetics, collaborator on various projects</li>
+<li><strong>Contact:</strong> <a href="mailto:j.isidro@upm.es" class="email">j.isidro@upm.es</a></li>
+</ul></li>
+<li><strong>Dr. Jhonathan Pedroso</strong>
+<ul>
+<li><strong>Affiliation:</strong> Research Scientist at Corteva
+Agriscience, Corteva, Johnston, Iowa, USA</li>
+<li><strong>Relationship:</strong> Industry partner in genomic tool
+development, contributed to software enhancements</li>
+<li><strong>Contact:</strong> <a href="mailto:jhowpd@gmail.com" class="email">jhowpd@gmail.com</a></li>
+</ul></li>
+<li><strong>Dr. Lynn Johnson</strong>
+<ul>
+<li><strong>Affiliation:</strong> Interim Director and Statistical
+Consultant, Cornell Statistical Consulting Unit, Cornell University,
+Ithaca, NY, USA</li>
+<li><strong>Relationship:</strong> Coworker at the Cornell Statistical
+Consulting Unit</li>
+<li><strong>Contact:</strong> <a href="mailto:lms86@cornell.edu" class="email">lms86@cornell.edu</a></li>
+</ul></li>
+<li><strong>Dr. Roberto Fritsche Neto</strong>
+<ul>
+<li><strong>Affiliation:</strong> Assistant Professor, Department of
+Plant, Environmental Management &amp; Soil Sciences, LSU</li>
+<li><strong>Relationship:</strong> Collaborator on various projects</li>
+<li><strong>Contact:</strong> <a href="mailto:rneto1@lsu.edu" class="email">rneto1@lsu.edu</a></li>
+</ul></li>
 </ul>
 </div>
 

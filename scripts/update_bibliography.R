@@ -35,11 +35,21 @@ cat(sprintf("Found %d publications\n", nrow(publications)))
 # Read existing BibTeX file
 existing_bibtex_file <- "data/DA_bibliography.bib"
 existing_bibtex <- NA
-if (file.exists(existing_bibtex_file)) {
-  cat("Reading existing BibTeX file...\n")
-  existing_bibtex <- bibtex::read.bib(existing_bibtex_file)
-  cat(sprintf("Found %d existing entries\n", length(existing_bibtex)))
-}
+tryCatch({
+  if (file.exists(existing_bibtex_file)) {
+    cat("Reading existing BibTeX file...\n")
+    tryCatch({
+      existing_bibtex <- bibtex::read.bib(existing_bibtex_file)
+      cat(sprintf("Found %d existing entries\n", length(existing_bibtex)))
+    }, error = function(e) {
+      cat(sprintf("Error reading BibTeX file: %s\n", e$message))
+      existing_bibtex <- list() # Initialize to empty list to avoid further errors
+    })
+  }
+}, error = function(e) {
+  cat(sprintf("Error reading BibTeX file: %s\n", e$message))
+})
+
 
 # Create BibTeX entries for new publications
 new_entries <- list()
@@ -63,7 +73,10 @@ for (i in 1:nrow(publications)) {
     # Get details for the publication
     pub_id <- publications$pubid[i]
     details <- get_publication_data(google_scholar_id, pub_id)
-    
+
+    # Print the details$year value to the console
+    cat(sprintf("details$year: %s\n", details$year))
+
     # Create BibTeX entry
     entry <- bibentry(
       bibtype = ifelse(grepl("conference|proceedings", tolower(details$journal)), "InProceedings", "Article"),

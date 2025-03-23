@@ -1,57 +1,62 @@
----
-graphics: yes
-name: "Dr. Deniz Akdemir"
-position: "Statistical Genomics Specialist"
-address: ""
-phone: "+1 607 262 6875"
-email: "deniz.akdemir.work@gmail.com"
-github: "denizakdemir"
-date: "`r format(Sys.Date(), '%B %Y')`"
-output: 
-  vitae::moderncv:
-    keep_tex: true
-    includes:
-      in_header: ../../styles/header_include.tex
-csl: "../../csl/apa6-cv.csl"
----
+# Professional Profile
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(vitae)
+Deniz Akdemir is an innovative researcher in genomics and computational biology with extensive experience in statistical genomics, bioinformatics, and integrative genetic data analysis. His work focuses on developing computational pipelines and statistical methods to decode complex genetic information and drive forward precision medicine.
+
+# Core Competencies
+
+- Genomic Data Analysis & Bioinformatics
+- Statistical Genomics & Computational Biology
+- Integrative Omics Data Processing
+- High-Throughput Sequencing Analysis
+- Data Visualization & Scientific Communication
+
+# Professional Experience
+
+- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)  
+  Led projects in next-generation sequencing data analysis, developing novel algorithms for variant detection and gene expression profiling.
+- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)  
+  Developed and maintained bioinformatics pipelines for large-scale genomic studies, contributing to significant discoveries in personalized medicine.
+- **Postdoctoral Research Associate**, University College Dublin (2019 - 2021)  
+  Assisted in research projects focused on integrative multi-omics analysis and statistical method development in genomics.
+
+# Education
+
+- **PhD. in Statistics**, Bowling Green State University (2009)  
+- **M.A. in Applied Statistics**, Bowling Green State University (2004)  
+- **M.S. in Statistics**, Middle East Technical University (2003)
+- **B.A. in Business Administration**, Middle East Technical University (1999)
+
+# Research Interests
+
+His research is centered on the integration of statistical methods with bioinformatics to elucidate genetic mechanisms underlying complex traits. He is particularly passionate about leveraging high-throughput sequencing and multi-omics data to uncover novel insights in genomics.
+
+# Collaboration Network
+
+```{r coauthor_network,  message=FALSE, warning=FALSE, echo=FALSE}
+library(scholar)
+library(igraph)
+library(visNetwork)
+  if (Sys.getenv("SCHOLAR_ID") == "") {
+  scholar_id <- 'O_xha20AAAAJ'
+  } else {
+  # Get Google Scholar ID from environment variable
+  scholar_id <- Sys.getenv("SCHOLAR_ID")
+  }
+  
+  if(nchar(scholar_id) > 0) {
+    coauthors <- scholar::get_coauthors(scholar_id)
+    
+    plot_coauthors(coauthors)
+  }
 ```
 
-# Professional Summary
+# Core Skills
 
-I am an accomplished statistical genomics professional with deep expertise in developing advanced methodologies for genomic prediction and selection. My work focuses on optimizing breeding programs and creating computational tools that integrate complex genomic, phenotypic, and environmental data to enhance agricultural and biomedical outcomes.
-
-# Key Areas of Expertise
-
-- **Statistical Genomics:**
-  - Genomic selection, multi-trait methodologies, genomic prediction
-  - Genome-Wide Association Studies (GWAS)
-  - Epistatic models and genotype-by-environment interaction analysis
-  - Optimization of plant and animal breeding programs
-
-- **Statistics & Biostatistics:**
-  - Multivariate analysis and high-dimensional data modeling
-  - Bayesian methods, frequentist approaches, and robust inference
-  - Machine learning and deep learning in biological research
-  - Applied data science and experimental design
-
-- **Computational Genomics:**
-  - Development of software tools for analyzing genomic data
-  - Tools for genotype imputation, population structure analysis, and genomic relationships
-  - Multi-omics integration of heterogeneous data for improved prediction
-
-- **Applied Genomics:**
-  - Practical applications in plant breeding (rice, wheat, cassava, olive)
-  - Clinical applications in stem cell transplantation
-  - Implementation of genomic selection in commercial breeding programs
-
-- **Leadership & Management:**
-  - Strategic planning and project management for genomic initiatives
-  - Team leadership and cross-disciplinary collaboration
-  - Grant writing and intellectual property development
+- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
+- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
+- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
+- **Software Development:** Development of research and commercial grade software.
+- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
 
 
 # Career Summary
@@ -70,36 +75,14 @@ I am an accomplished statistical genomics professional with deep expertise in de
 
 # Publications
 
-```{r references, echo=FALSE, as.is=TRUE, warning=FALSE, message=FALSE}
-# Read all publications
-all_publications <- vitae::bibliography_entries("../../data/DA_bibliography.bib")
-
-# Filter for genomics-related publications
-genomics_keywords <- c("genom", "breed", "genetic", "selection", "prediction", "GWAS", "epistasis", 
-                       "QTL", "sequenc", "gene", "haplotype", "SNP", "marker", "crop", "plant",
-                       "rice", "wheat", "cassava", "olive")
-combined_text <- paste(
-  tolower(all_publications$title), 
-  tolower(as.character(all_publications$journal)),
-  sep = " "
-)
-genomics_publications <- all_publications[grepl(paste(genomics_keywords, collapse="|"), 
-                                              combined_text, 
-                                              fixed = FALSE)]
-
-# Display genomics-focused publications (only if found, otherwise show first 10)
-if(length(genomics_publications) > 0) {
-  genomics_publications
-} else {
-  # Fallback to show first 10 publications
-  all_publications[1:min(10, length(all_publications))]
-}
+```{r references, echo=FALSE, as.is=TRUE}
+vitae::bibliography_entries(params$bib_file)
 ```
 
 # Education
 
-- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
-- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
+- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.  
+- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.  
 - **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
 - **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
 

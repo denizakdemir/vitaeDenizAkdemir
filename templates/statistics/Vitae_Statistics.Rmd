@@ -1,61 +1,68 @@
----
-graphics: yes
-name: "Dr. Deniz Akdemir"
-position: "Statistical & Biostatistical Expert"
-address: ""
-phone: "+1 607 262 6875"
-email: "deniz.akdemir.work@gmail.com"
-github: "denizakdemir"
-date: "`r format(Sys.Date(), '%B %Y')`"
-output: 
-  vitae::moderncv:
-    keep_tex: true
-    includes:
-      in_header: ../../styles/header_include.tex
-csl: "../../csl/apa6-cv.csl"
----
+# Professional Profile
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(vitae)
+Deniz Akdemir is a statistician with advanced expertise in statistical modeling, experimental design, and data analysis. His career spans academic research and applied statistics across healthcare, finance, and genomics, where he leverages quantitative methods to derive actionable insights from complex data.
+
+# Core Competencies
+
+- Advanced Statistical Modeling
+- Experimental Design & Data Analysis
+- Predictive Analytics & Machine Learning
+- Bayesian & Frequentist Methods
+- Data Visualization & Communication
+
+# Professional Experience
+
+- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)  
+  Lead statistical analysis and design of clinical trials, improving study efficiency and decision-making.
+- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)  
+  Developed predictive models and data-driven insights to optimize business strategies.
+- **Postdoctoral Research Associate**, University College Dublin (2019 - 2021)  
+  Conducted research in innovative statistical methodologies and contributed to high-impact publications.
+
+# Education
+
+- **PhD. in Statistics**, Bowling Green State University (2009)  
+- **M.A. in Applied Statistics**, Bowling Green State University (2004)  
+- **M.S. in Statistics**, Middle East Technical University (2003)
+- **B.A. in Business Administration**, Middle East Technical University (1999)
+
+# Research Interests
+
+His research focuses on the development and application of robust statistical methods, including Bayesian modeling, time series analysis, and nonparametric techniques, to solve real-world challenges in various domains.
+
+# Collaboration Network
+
+```{r coauthor_network,  message=FALSE, warning=FALSE, echo=FALSE}
+library(scholar)
+library(igraph)
+library(visNetwork)
+  if (Sys.getenv("SCHOLAR_ID") == "") {
+  scholar_id <- 'O_xha20AAAAJ'
+  } else {
+  # Get Google Scholar ID from environment variable
+  scholar_id <- Sys.getenv("SCHOLAR_ID")
+  }
+  
+  if(nchar(scholar_id) > 0) {
+    coauthors <- scholar::get_coauthors(scholar_id)
+    
+    plot_coauthors(coauthors)
+  }
 ```
 
-# Professional Summary
+# Core Skills
 
-I am an accomplished statistician and biostatistician with extensive experience in genomics, multivariate analysis, and high-dimensional data modeling. Adept at employing Bayesian, frequentist, and machine-learning techniques to drive insights within biological and health-related domains, I am committed to rigorous methodological standards and effective leadership of cross-functional teams.
-
-# Key Areas of Expertise
-
-- **Statistical Genomics:**
-  - Genomic selection, multi-trait methodologies, genomic prediction
-  - Genome-Wide Association Studies (GWAS)
-  - Epistatic models and genotype-by-environment interaction analysis
-  - Optimization of plant and animal breeding programs
-
-- **Statistics & Biostatistics:**
-  - Multivariate analysis and high-dimensional data modeling
-  - Bayesian methods, frequentist approaches, and robust inference
-  - Machine learning and deep learning in biological research
-  - Applied data science and experimental design
-
-- **Statistical Computation:**
-  - Proficient in R, SAS, Python, and C++ for data analysis and visualization
-  - Development and validation of statistical and computational pipelines
-
-- **Software Development:**
-  - Research-grade and commercial statistical software
-  - Implementation of reproducible workflows and efficient data processing
-
-- **Leadership & Management:**
-  - Strategic planning and project management for large-scale grants
-  - Team leadership, including coordinating interdisciplinary research groups
-  - Grant/patent writing, budgeting, and organizational financial oversight
+- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
+- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
+- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
+- **Software Development:** Development of research and commercial grade software.
+- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
 
 
 # Career Summary
 -   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
 -   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
-- **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** Conducted research on methods for combining heterogeneous genomic and phenotypic datasets and prepared statistical software for data analysis.
+- **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** Conducted research in innovative statistical methodologies and contributed to high-impact publications.
 - **Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):** Provided statistical consulting services for researchers at Cornell University, including the preparation and presentation of statistics workshops.
 - **Postdoctoral Research Associate, Department of Plant Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 - 2017):** Focused on research developing new methodologies in genomic selection and prediction, mixed models, and machine learning, advising graduate students and preparing statistical software.
 - **Visiting Assistant Professor, Department of Statistics and Actuarial Science, University of Central Florida, Orlando, FL, USA (2010 - 2011):** Responsibilities included teaching Data Mining Methodology, Theoretical Statistics, Applied Time Series Analysis, and Nonparametric Statistics.
@@ -68,29 +75,14 @@ I am an accomplished statistician and biostatistician with extensive experience 
 
 # Publications
 
-```{r references, echo=FALSE, as.is=TRUE, warning=FALSE, message=FALSE}
-# Read all publications
-all_publications <- vitae::bibliography_entries("../../data/DA_bibliography.bib")
-
-# Filter for statistics-related publications
-stats_keywords <- c("statistic", "bayesian", "multivariate", "data science", "machine learning")
-stats_publications <- all_publications[grepl(paste(stats_keywords, collapse="|"), 
-                                            tolower(all_publications$title), 
-                                            fixed = FALSE)]
-
-# Display statistics-focused publications (only if found, otherwise show first 10)
-if(length(stats_publications) > 0) {
-  stats_publications
-} else {
-  # Fallback to show first 10 publications
-  all_publications[1:min(10, length(all_publications))]
-}
+```{r references, echo=FALSE, as.is=TRUE}
+vitae::bibliography_entries(params$bib_file)
 ```
 
 # Education
 
-- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
-- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
+- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.  
+- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.  
 - **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
 - **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
 

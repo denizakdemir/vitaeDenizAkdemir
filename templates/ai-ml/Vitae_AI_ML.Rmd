@@ -1,53 +1,60 @@
----
-graphics: yes
-name: "Dr. Deniz Akdemir"
-position: "Machine Learning & AI Specialist with Genomic Expertise"
-address: ""
-phone: "+1 607 262 6875"
-email: "deniz.akdemir.work@gmail.com"
-github: "denizakdemir"
-date: "`r format(Sys.Date(), '%B %Y')`"
-output: 
-  vitae::moderncv:
-    keep_tex: true
-    includes:
-      in_header: ../../styles/header_include.tex
-csl: "../../csl/apa6-cv.csl"
----
+# Professional Profile
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(vitae)
+Deniz Akdemir is an AI/ML specialist with extensive experience in machine learning, data analytics, and computational intelligence. His work focuses on developing cutting-edge algorithms and AI solutions for complex data challenges.
+
+# Core Competencies
+
+- Machine Learning & Deep Learning
+- Data Analytics and Visualization
+- Algorithm Development
+- Statistical Modeling
+- Research & Innovation
+
+# Professional Experience
+
+- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)
+- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)
+- **Postdoctoral Research Associate**, University College Dublin (2019 - 2021)
+
+# Education
+
+- **PhD. in Statistics**, Bowling Green State University (2009)
+- **M.A. in Applied Statistics**, Bowling Green State University (2004)
+- **M.S. in Statistics**, Middle East Technical University (2003)
+- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
+
+# Research Interests
+
+His research focuses on integrating statistical methods with deep learning to create robust and interpretable AI models. He is particularly interested in the application of machine learning in solving real-world problems.
+
+# Collaboration Network
+
+```{r coauthor_network,  message=FALSE, warning=FALSE, echo=FALSE}
+library(scholar)
+library(igraph)
+library(visNetwork)
+  if (Sys.getenv("SCHOLAR_ID") == "") {
+  scholar_id <- 'O_xha20AAAAJ'
+  } else {
+  # Get Google Scholar ID from environment variable
+  scholar_id <- Sys.getenv("SCHOLAR_ID")
+  }
+  
+  if(nchar(scholar_id) > 0) {
+    coauthors <- scholar::get_coauthors(scholar_id)
+    
+    plot_coauthors(coauthors)
+  }
+
 ```
 
-# Professional Summary
+# Core Skills
 
-I am a dedicated machine learning and AI professional with a strong background in statistical genomics and data science. My expertise encompasses designing cutting-edge algorithms, building scalable software solutions, and leading teams in developing advanced applications across genomics and other high-impact fields.
-
-# Key Areas of Expertise
-
-- **Statistical Genomics & Advanced Modeling:**
-  - Genomic selection, multi-trait approaches, GWAS, and epistasis modeling
-  - Integration of genotype-by-environment interactions into AI models
-  - Optimization frameworks for plant and animal breeding
-
-- **Machine Learning & Deep Learning:**
-  - End-to-end modeling pipelines for supervised and unsupervised learning
-  - High-dimensional data handling, dimensionality reduction, feature engineering
-  - Bayesian deep learning, ensemble methods, and model interpretability
-
-- **Statistical & Computational Skills:**
-  - Programming in R, SAS, Python, and C++ for algorithm design and deployment
-  - Development of computationally efficient, scalable AI solutions
-  - Deployment of machine learning models in research and production environments
-
-- **Software Development & Architecture:**
-  - Building robust, modular software with version control and CI/CD integration
-  - API design, cloud computing, and containerization for scalable services
-
-- **Project Management & Leadership:**
-  - Leading multidisciplinary AI projects and managing cross-functional teams
-  - Grant writing, patent drafting, and managing budgets for innovative research
+- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
+- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
+- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
+- **Software Development:** Development of research and commercial grade software.
+- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
 
 
 # Career Summary
@@ -66,30 +73,8 @@ I am a dedicated machine learning and AI professional with a strong background i
 
 # Publications
 
-```{r references, echo=FALSE, as.is=TRUE, warning=FALSE, message=FALSE}
-# Read all publications
-all_publications <- vitae::bibliography_entries("../../data/DA_bibliography.bib")
-
-# Filter for AI/ML-related publications
-ai_ml_keywords <- c("machine learning", "deep learning", "artificial intelligence", "neural network", 
-                    "prediction", "algorithm", "optimization", "data science", "bayesian", 
-                    "ensemble", "modeling", "predictive", "computational")
-combined_text <- paste(
-  tolower(all_publications$title), 
-  tolower(as.character(all_publications$journal)),
-  sep = " "
-)
-ai_ml_publications <- all_publications[grepl(paste(ai_ml_keywords, collapse="|"), 
-                                           combined_text, 
-                                           fixed = FALSE)]
-
-# Display AI/ML-focused publications (only if found, otherwise show first 10)
-if(length(ai_ml_publications) > 0) {
-  ai_ml_publications
-} else {
-  # Fallback to show first 10 publications
-  all_publications[1:min(10, length(all_publications))]
-}
+```{r references, echo=FALSE, as.is=TRUE}
+vitae::bibliography_entries(params$bib_file)
 ```
 
 # Education

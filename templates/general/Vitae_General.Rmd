@@ -1,49 +1,55 @@
----
-graphics: yes
-name: "Dr. Deniz Akdemir"
-position: "Data Science & Statistical Genomics Professional"
-address: ""
-phone: "+1 607 262 6875"
-email: "deniz.akdemir.work@gmail.com"
-github: "denizakdemir"
-date: "`r format(Sys.Date(), '%B %Y')`"
-output: 
-  vitae::moderncv:
-    keep_tex: true
-    includes:
-      in_header: ../../styles/header_include.tex
-csl: "../../csl/apa6-cv.csl"
----
+# Professional Profile
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(vitae)
+Deniz Akdemir is a data scientist and statistician with extensive experience in statistical genomics, machine learning, and computational biology. His work focuses on developing innovative statistical methods and computational tools to solve complex biological problems.
+
+# Core Competencies
+
+- Statistical modeling and machine learning
+- Genomic data analysis and interpretation
+- Research methodology development
+- Data visualization and communication
+- Collaborative research leadership
+
+# Professional Experience
+
+- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)
+- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)
+- **Postdoctoral Research Associate**, University College Dublin (2019 - 2021)
+
+# Education
+
+- **PhD. in Statistics**, Bowling Green State University (2009)
+- **M.A. in Applied Statistics**, Bowling Green State University (2004)
+- **M.S. in Statistics**, Middle East Technical University (2003)
+- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
+
+# Collaboration Network
+
+```{r coauthor_network,  message=FALSE, warning=FALSE, echo=FALSE}
+library(scholar)
+library(igraph)
+library(visNetwork)
+  if (Sys.getenv("SCHOLAR_ID") == "") {
+  scholar_id <- 'O_xha20AAAAJ'
+  } else {
+  # Get Google Scholar ID from environment variable
+  scholar_id <- Sys.getenv("SCHOLAR_ID")
+  }
+  
+  if(nchar(scholar_id) > 0) {
+    coauthors <- scholar::get_coauthors(scholar_id)
+    
+    plot_coauthors(coauthors)
+  }
 ```
 
-# Professional Summary
+# Core Skills
 
-I am a seasoned data scientist and statistical genomics professional with a versatile skill set spanning statistics, machine learning, and software development. Through effective management and cross-functional teamwork, I bring academic rigor and commercial insight to complex data challenges, ensuring both high-quality results and impactful project outcomes.
-
-# Key Areas of Expertise
-
-- **Statistical Genomics:**
-  - Comprehensive knowledge of genomic selection, GWAS, and epistasis
-  - Leveraging multi-trait models and genotype-by-environment interactions
-  - Enhancing breeding programs through advanced data-driven strategies
-
-- **Statistics & Data Analysis:**
-  - Multivariate analysis, high-dimensional modeling, and Bayesian inference
-  - Machine learning and deep learning for predictive analytics
-  - Biostatistics applications in research and industry
-
-- **Technical Proficiencies:**
-  - Skilled in R, SAS, Python, and C++ for robust statistical computing
-  - Development of both research and commercial-grade software
-
-- **Leadership & Management:**
-  - Strong project management, strategic planning, and budget oversight
-  - Team leadership with a focus on innovation and collaborative research
-  - Proven track record in grant writing and intellectual property management
+- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
+- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
+- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
+- **Software Development:** Development of research and commercial grade software.
+- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
 
 
 # Career Summary
@@ -62,8 +68,8 @@ I am a seasoned data scientist and statistical genomics professional with a vers
 
 # Publications
 
-```{r references, echo=FALSE, as.is=TRUE, warning=FALSE, message=FALSE}
-vitae::bibliography_entries("../../data/DA_bibliography.bib")
+```{r references, echo=FALSE, as.is=TRUE}
+vitae::bibliography_entries(params$bib_file)
 ```
 
 # Education

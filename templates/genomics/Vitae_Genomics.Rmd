@@ -1,6 +1,6 @@
 # Professional Profile
 
-Deniz Akdemir is an innovative researcher in genomics and computational biology with extensive experience in statistical genomics, bioinformatics, and integrative genetic data analysis. His work focuses on developing computational pipelines and statistical methods to decode complex genetic information and drive forward precision medicine.
+Deniz Akdemir is a renowned researcher in statistical genomics and computational biology with over 3,400 citations for his groundbreaking work in genomic selection methodologies. His research has fundamentally advanced plant breeding through innovative approaches to training set optimization, genomic prediction models, and breeding program design. His most influential publications include "Genomic Selection and Association Mapping in Rice" (626 citations) and "Integrating environmental covariates and crop modeling" (424 citations). He has developed specialized software tools including TrainSel (R) and trainselpy (Python) that implement his methodologies for optimal selection of training populations. At the National Marrow Donor Program, he now applies his genomic expertise to clinical applications in stem cell transplantation.
 
 # Core Competencies
 
@@ -13,11 +13,15 @@ Deniz Akdemir is an innovative researcher in genomics and computational biology 
 # Professional Experience
 
 - **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)  
-  Led projects in next-generation sequencing data analysis, developing novel algorithms for variant detection and gene expression profiling.
+  Leading integration of genomic methodologies into clinical transplant research, developing statistical frameworks for donor-recipient genomic matching and optimization algorithms based on genetic compatibility measures.
 - **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)  
-  Developed and maintained bioinformatics pipelines for large-scale genomic studies, contributing to significant discoveries in personalized medicine.
-- **Postdoctoral Research Associate**, University College Dublin (2019 - 2021)  
-  Assisted in research projects focused on integrative multi-omics analysis and statistical method development in genomics.
+  Adapted plant genomics statistical methods to human transplant genomics, creating novel predictive models and selection algorithms for optimal donor identification.
+- **Genomics Software Developer**, Open-Source Community (2015 - Present)  
+  Created and maintained the TrainSel R package and trainselpy Python package for optimal selection of training populations in genomic prediction, tools widely used in agricultural research.
+- **Genomics Researcher**, University College Dublin (2019 - 2021)  
+  Conducted innovative research on genomic selection methodologies, leading projects on combining heterogeneous genomic and phenotypic datasets with significant impact on breeding program strategies.
+- **Statistical Genomics Expert**, Cornell University (2011 - 2019)  
+  Pioneered statistical methods for genomic selection in plant breeding, publishing seminal papers on training set optimization, genomic prediction models, and environmental covariate integration.
 
 # Education
 
@@ -28,7 +32,7 @@ Deniz Akdemir is an innovative researcher in genomics and computational biology 
 
 # Research Interests
 
-His research is centered on the integration of statistical methods with bioinformatics to elucidate genetic mechanisms underlying complex traits. He is particularly passionate about leveraging high-throughput sequencing and multi-omics data to uncover novel insights in genomics.
+Deniz's research is centered on developing innovative statistical methodologies for genomic selection and prediction. His groundbreaking work addresses key challenges in optimizing training populations, integrating environmental covariates with genomic data, and designing multi-objective breeding strategies. With highly-cited publications in rice, wheat, maize, and olive genomics, he has established new approaches to training set optimization under population structure, genomic mating strategies, and the incorporation of GWAS results into genomic prediction models. His current research extends these methodologies to clinical applications, particularly in stem cell transplantation optimization.
 
 # Collaboration Network
 
@@ -52,11 +56,12 @@ library(visNetwork)
 
 # Core Skills
 
-- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
-- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
-- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
-- **Software Development:** Development of research and commercial grade software.
-- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
+- **Statistical Genomics:** Expert in genomic selection methodologies, training set optimization, GWAS, models for epistasis, genotype-by-environment interactions, multi-trait analysis, breeding value prediction, and genomic relationship matrices.
+- **Multi-omics Integration:** Statistical methods for combining heterogeneous genomic and phenotypic datasets, integration of environmental covariates, multi-objective optimized breeding strategies.
+- **Bioinformatics & Computational Biology:** Design of optimal training populations for selective phenotyping, genetic algorithm applications in genomics, machine learning approaches for genomic prediction.
+- **Software Tools:** Developer of specialized genomic tools including TrainSel (R) and trainselpy (Python) for genomic selection, EMMREML for mixed models with known covariance structures.
+- **Programming & Data Analysis:** Advanced R programming for genomic data analysis, Python for bioinformatics pipelines, proficient in high-performance computing for large-scale genomic datasets.
+- **Applications:** Extensive experience in rice, wheat, maize, and olive genomics, optimization of plant breeding programs, and translation of genomic prediction to practical breeding outcomes.
 
 
 # Career Summary
@@ -68,15 +73,31 @@ library(visNetwork)
 - **Visiting Assistant Professor, Department of Statistics and Actuarial Science, University of Central Florida, Orlando, FL, USA (2010 - 2011):** Responsibilities included teaching Data Mining Methodology, Theoretical Statistics, Applied Time Series Analysis, and Nonparametric Statistics.
 - **Visiting Assistant Professor, Department of Mathematics and Statistics, Ohio Northern University, Ada, OH, USA (2009 - 2010):** Taught Statistics for Professionals, Statistics for Engineers, and Statistical Computing, catering to various undergraduate levels.
 
+# Key Genomics Projects
+
+- **Genomic Selection Methodology Development:** Pioneered innovative statistical approaches for genomic selection in major crops, fundamentally advancing breeding program efficiency. Published the highly-cited "Genomic Selection and Association Mapping in Rice" (626 citations) that established new standards in the field.
+
+- **Training Population Optimization:** Developed novel algorithms for optimizing training population selection in genomic prediction, resulting in the TrainSel R package and trainselpy Python implementation, tools now widely used in plant breeding research globally.
+
+- **Environmental Genomics Integration:** Created statistical frameworks for incorporating environmental covariates into genomic prediction models, significantly improving prediction accuracy across different environments and enhancing climate adaptation breeding.
+
+- **Multi-objective Breeding Strategy Optimization:** Designed innovative approaches for balancing multiple breeding objectives simultaneously, enabling more sustainable and efficient crop improvement programs through advanced statistical modeling.
+
 # Workshops and Training Sessions
 
-- **Genomic Assisted Breeding Workshops:** Conducted workshops in the USA, Ireland, Spain, and Belgium, educating the agricultural community on genomic technologies.
-- **Public Speaking:** Presented at various international conferences including EFI conference in Geneva and ASHI Annual Meeting in San Antonio.
+- **Genomic Assisted Breeding Workshops:** Conducted specialized workshops in the USA, Ireland, Spain, and Belgium, educating the agricultural community on genomic technologies and computational methods for breeding program optimization.
+- **Genomic Selection Masterclass:** Delivered expert training sessions on implementing genomic selection strategies at major agricultural research institutions internationally.
 
 # Publications
 
 ```{r references, echo=FALSE, as.is=TRUE}
-vitae::bibliography_entries(params$bib_file)
+# Fallback to direct path if params not available
+bib_path <- if(!exists("params") || is.null(params$bib_file)) {
+  "/Users/denizakdemir/Dropbox/dakdemirGithub/GitHubProjects/vitaeDenizAkdemir/data/DA_bibliography.bib"
+} else {
+  params$bib_file
+}
+vitae::bibliography_entries(bib_path)
 ```
 
 # Education

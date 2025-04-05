@@ -1,6 +1,6 @@
 # Professional Profile
 
-Deniz Akdemir is a data scientist and statistician with extensive experience in statistical genomics, machine learning, and computational biology. His work focuses on developing innovative statistical methods and computational tools to solve complex biological problems.
+Deniz Akdemir is a data scientist and statistician with extensive experience in statistical genomics, machine learning, and computational biology. With over 3,400 citations on Google Scholar and 86 publications, he is known for developing innovative statistical methods and computational tools that solve complex biological and clinical problems. As the owner of StatGen Consulting and a Senior Clinical Data Scientist at the National Marrow Donor Program, he bridges sophisticated statistical theory with practical applications in genomics, machine learning, and healthcare.
 
 # Core Competencies
 
@@ -45,11 +45,12 @@ library(visNetwork)
 
 # Core Skills
 
-- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
-- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
-- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
-- **Software Development:** Development of research and commercial grade software.
-- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
+- **Statistical Analysis:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, experimental design, biostatistics, time series analysis, causal inference, predictive modeling.
+- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis, genotype-by-environment interactions, optimization of breeding programs.
+- **Data Science & Machine Learning:** Data mining, exploratory analysis, feature engineering, predictive modeling, supervised and unsupervised learning algorithms, deep learning applications.
+- **Programming & Tools:** Advanced R programming (package development), Python (NumPy, Pandas, scikit-learn), SAS, C++, SQL, version control with Git.
+- **Software Development:** Creator of research and commercial-grade software packages including TrainSel (R) and trainselpy (Python) for optimal selection of training populations.
+- **Leadership & Management:** Project leadership, team management, scientific writing, grant/patent applications, stakeholder communication, budget administration.
 
 
 # Career Summary
@@ -61,6 +62,16 @@ library(visNetwork)
 - **Visiting Assistant Professor, Department of Statistics and Actuarial Science, University of Central Florida, Orlando, FL, USA (2010 - 2011):** Responsibilities included teaching Data Mining Methodology, Theoretical Statistics, Applied Time Series Analysis, and Nonparametric Statistics.
 - **Visiting Assistant Professor, Department of Mathematics and Statistics, Ohio Northern University, Ada, OH, USA (2009 - 2010):** Taught Statistics for Professionals, Statistics for Engineers, and Statistical Computing, catering to various undergraduate levels.
 
+# Key Projects
+
+- **Statistical Software Development:** Creator of multiple R and Python packages including TrainSel, EMMREML for mixed models, and ml4t2e for machine learning in time-to-event data analysis. These tools implement novel methodologies and are used by researchers worldwide.
+
+- **Stem Cell Transplant Optimization:** Leading statistical and machine learning analysis of donor-recipient matching at the National Marrow Donor Program, developing predictive models that improve patient outcomes through optimized donor selection.
+
+- **Genomic Selection Methodologies:** Pioneered approaches for optimizing training populations in genomic prediction, with applications in major crop improvement programs. Publications on this work have received over 1,000 citations collectively.
+
+- **Multi-omics Data Integration:** Developed statistical frameworks for combining heterogeneous genomic and phenotypic datasets, enabling more accurate prediction models and deeper biological insights.
+
 # Workshops and Training Sessions
 
 - **Genomic Assisted Breeding Workshops:** Conducted workshops in the USA, Ireland, Spain, and Belgium, educating the agricultural community on genomic technologies.
@@ -69,7 +80,13 @@ library(visNetwork)
 # Publications
 
 ```{r references, echo=FALSE, as.is=TRUE}
-vitae::bibliography_entries(params$bib_file)
+# Fallback to direct path if params not available
+bib_path <- if(!exists("params") || is.null(params$bib_file)) {
+  "/Users/denizakdemir/Dropbox/dakdemirGithub/GitHubProjects/vitaeDenizAkdemir/data/DA_bibliography.bib"
+} else {
+  params$bib_file
+}
+vitae::bibliography_entries(bib_path)
 ```
 
 # Education

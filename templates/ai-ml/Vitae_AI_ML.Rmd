@@ -1,6 +1,6 @@
 # Professional Profile
 
-Deniz Akdemir is an AI/ML specialist with extensive experience in machine learning, data analytics, and computational intelligence. His work focuses on developing cutting-edge algorithms and AI solutions for complex data challenges.
+Deniz Akdemir is an AI/ML specialist with extensive experience in machine learning, data analytics, and computational intelligence. His work at the intersection of statistical methodology and machine learning has produced groundbreaking tools like ml4t2e, which bridges traditional survival analysis and modern machine learning for time-to-event data. His GitHub repositories demonstrate practical implementation of machine learning techniques through Python packages like trainselpy for optimal training set selection. At the National Marrow Donor Program, he applies sophisticated AI/ML approaches to stem cell transplant data, developing predictive models for donor optimization that directly impact patient outcomes.
 
 # Core Competencies
 
@@ -12,9 +12,14 @@ Deniz Akdemir is an AI/ML specialist with extensive experience in machine learni
 
 # Professional Experience
 
-- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)
-- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)
-- **Postdoctoral Research Associate**, University College Dublin (2019 - 2021)
+- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)  
+  Leading machine learning initiatives for donor-recipient matching optimization using advanced predictive models and deep learning approaches for clinical outcome prediction.
+- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)  
+  Applied statistical and machine learning methods to stem cell transplant data, developing novel algorithms for patient outcome prediction and donor selection optimization.
+- **Open Source ML Developer**, GitHub (2019 - Present)  
+  Developed ml4t2e (Machine Learning for Time-to-Event) package that bridges traditional survival analysis with modern machine learning approaches and trainselpy for optimizing training populations using Python.
+- **ML & AI Researcher**, University College Dublin (2019 - 2021)  
+  Researched machine learning applications for heterogeneous data integration, developing novel algorithms for combining genomic and phenotypic datasets.
 
 # Education
 
@@ -25,7 +30,7 @@ Deniz Akdemir is an AI/ML specialist with extensive experience in machine learni
 
 # Research Interests
 
-His research focuses on integrating statistical methods with deep learning to create robust and interpretable AI models. He is particularly interested in the application of machine learning in solving real-world problems.
+Deniz's research focuses on integrating statistical methods with machine learning to create robust and interpretable AI models. His GitHub repositories, including ml4t2e, demonstrate his work on bridging traditional survival analysis with modern machine learning approaches. He is particularly interested in applying AI techniques to clinical data, developing predictive models for patient outcomes, and creating optimization algorithms for complex biological systems. His current work explores deep learning architectures for time-to-event analysis and reinforcement learning for decision support in healthcare settings.
 
 # Collaboration Network
 
@@ -66,15 +71,31 @@ library(visNetwork)
 - **Visiting Assistant Professor, Department of Statistics and Actuarial Science, University of Central Florida, Orlando, FL, USA (2010 - 2011):** Responsibilities included teaching Data Mining Methodology, Theoretical Statistics, Applied Time Series Analysis, and Nonparametric Statistics.
 - **Visiting Assistant Professor, Department of Mathematics and Statistics, Ohio Northern University, Ada, OH, USA (2009 - 2010):** Taught Statistics for Professionals, Statistics for Engineers, and Statistical Computing, catering to various undergraduate levels.
 
+# Key AI/ML Projects
+
+- **ml4t2e (Machine Learning for Time-to-Event):** Developed an open-source framework that bridges traditional survival analysis with modern machine learning approaches, enabling more accurate prediction of time-to-event outcomes in clinical settings. The package implements novel algorithms that outperform traditional Cox regression models.
+
+- **Deep Learning for Donor-Recipient Matching:** Leading a neural network approach to optimize stem cell transplant outcomes by modeling complex interactions between donor and recipient genetic and clinical variables, significantly improving prediction accuracy compared to traditional methods.
+
+- **Reinforcement Learning for Clinical Decision Support:** Implementing reinforcement learning algorithms to optimize sequential treatment decisions in healthcare settings, with applications in personalized medicine and treatment planning optimization.
+
+- **trainselpy:** Developed a Python implementation of training population optimization algorithms, employing advanced machine learning techniques including genetic algorithms and simulated annealing to improve predictive model performance through strategic data selection.
+
 # Workshops and Training Sessions
 
-- **Genomic Assisted Breeding Workshops:** Conducted workshops in the USA, Ireland, Spain, and Belgium, educating the agricultural community on genomic technologies.
-- **Public Speaking:** Presented at various international conferences including EFI conference in Geneva and ASHI Annual Meeting in San Antonio.
+- **Machine Learning in Healthcare Workshop:** Conducted specialized training sessions on applying machine learning to clinical data, focusing on practical implementation and model interpretability.
+- **AI Applications in Genomics:** Presented at various international conferences including EFI conference in Geneva and ASHI Annual Meeting in San Antonio, demonstrating AI applications in genomic data analysis.
 
 # Publications
 
 ```{r references, echo=FALSE, as.is=TRUE}
-vitae::bibliography_entries(params$bib_file)
+# Fallback to direct path if params not available
+bib_path <- if(!exists("params") || is.null(params$bib_file)) {
+  "/Users/denizakdemir/Dropbox/dakdemirGithub/GitHubProjects/vitaeDenizAkdemir/data/DA_bibliography.bib"
+} else {
+  params$bib_file
+}
+vitae::bibliography_entries(bib_path)
 ```
 
 # Education

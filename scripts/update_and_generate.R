@@ -9,8 +9,12 @@
 script_dir <- dirname(normalizePath(commandArgs(trailingOnly = FALSE)[grep("--file=", commandArgs(trailingOnly = FALSE))][1], winslash = "/"))
 project_dir <- dirname(script_dir)
 
-# Set bibliography file path using the project directory
-bib_file <- file.path(project_dir, "data", "DA_bibliography.bib")
+# Set bibliography file path using the project directory - use absolute path
+bib_file <- "/Users/denizakdemir/Dropbox/dakdemirGithub/GitHubProjects/vitaeDenizAkdemir/data/DA_bibliography.bib"
+# Verify it exists
+if (!file.exists(bib_file)) {
+  stop("Bibliography file not found: ", bib_file)
+}
 
 # Set working directory to the project root
 setwd(project_dir)

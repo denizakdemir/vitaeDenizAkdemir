@@ -1,6 +1,6 @@
 # Professional Profile
 
-Deniz Akdemir is a seasoned executive leader with a proven track record in driving organizational growth, strategic planning, and operational excellence. With a unique blend of analytical expertise and visionary leadership, he has successfully led multidisciplinary teams to innovate and transform business practices in competitive markets.
+Deniz Akdemir is a seasoned leader with a proven track record in research management, strategic planning, and operational excellence in academic and clinical environments. As the owner of StatGen Consulting and Senior Clinical Data Scientist at the National Marrow Donor Program, he combines analytical expertise with visionary leadership to drive innovation and organizational growth. With a background spanning academic positions at Cornell University and University College Dublin, he has demonstrated excellence in project management, team leadership, and strategic decision-making. His success in securing funding, publishing high-impact research (86 publications with 30,000+ reads), and developing commercial-grade software showcases his ability to transform scientific expertise into practical business outcomes.
 
 # Core Competencies
 
@@ -12,12 +12,14 @@ Deniz Akdemir is a seasoned executive leader with a proven track record in drivi
 
 # Professional Experience
 
-- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)  
-  Spearheaded company-wide strategic initiatives, leading to a 35% increase in revenue and market expansion.
+- **Senior Clinical Data Scientist & Team Lead**, National Marrow Donor Program (2023 - Current)  
+  Lead strategic research initiatives in donor optimization, managing cross-functional teams of data scientists and clinicians. Direct grant acquisition strategy and patent application development, significantly expanding the organization's intellectual property portfolio.
 - **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)  
-  Oversaw corporate analytics strategies, improving decision-making processes across all business units.
-- **Postdoctoral Research Associate**, University College Dublin (2019 - 2021)  
-  Managed cross-functional teams focused on leveraging data insights for operational enhancements.
+  Developed and implemented advanced analytics strategies for stem cell transplant data, establishing new departmental standards for data analysis. Oversaw transition to machine learning-based predictive models, improving operational decision-making processes.
+- **Founder & Principal Consultant**, StatGen Consulting (2017 - Present)  
+  Founded and grew a specialized statistical genomics consulting firm serving international clients across academic and commercial sectors. Directed all business operations including client acquisition, project management, and service delivery.
+- **Research Team Leader**, University College Dublin (2019 - 2021)  
+  Led international research collaborations on combining heterogeneous genomic and phenotypic datasets, managing both technical and administrative aspects of multi-institution projects. Secured funding for continuing research initiatives.
 
 # Education
 
@@ -28,9 +30,14 @@ Deniz Akdemir is a seasoned executive leader with a proven track record in drivi
 
 # Leadership & Achievements
 
-- Developed and executed turnaround strategies for underperforming divisions.
-- Led digital transformation projects that improved operational efficiency by over 25%.
-- Established key partnerships with industry leaders to foster innovation and growth.
+- Founded and grew StatGen Consulting, providing specialized statistical genomics services to academic and commercial clients globally.
+- Led multiple research teams across international institutions resulting in 86 publications with over 30,000 reads and 3,400+ citations.
+- Developed commercial-grade software packages (TrainSel, EMMREML, ml4t2e) that have been widely adopted by research communities.
+- Secured substantial research funding through competitive grants and industry partnerships.
+- Established key partnerships with top agricultural research institutions in the USA, Europe, and South America.
+- Successfully transitioned expertise from plant genomics to healthcare applications at the National Marrow Donor Program.
+- Recognized for research excellence with highly-cited publications (top paper with 626 citations).
+- Created and delivered specialized workshops on genomic technologies across four countries.
 
 # Collaboration Network
 
@@ -54,16 +61,27 @@ library(visNetwork)
 
 # Core Skills
 
-- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
-- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
-- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
-- **Software Development:** Development of research and commercial grade software.
-- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
+- **Strategic Leadership:** Vision development, organizational growth planning, data-driven strategy implementation, cross-functional team management, change management, innovation acceleration.
+- **Business Operations:** Project management, resource allocation, process optimization, performance metrics development, risk assessment, operational efficiency enhancement.
+- **Financial Management:** Budget development and oversight, financial forecasting, resource allocation strategies, ROI analysis, grant and funding acquisition.
+- **Team Leadership:** Team building and mentorship, talent recruitment and development, performance management, collaborative environment cultivation, delegation and empowerment.
+- **Stakeholder Management:** Board relations, client relationship management, partner engagement, interdepartmental collaboration, external agency coordination.
+- **Data-Driven Decision Making:** Analytics strategy development, business intelligence implementation, metrics definition, KPI monitoring, predictive modeling for business forecasting.
 
+
+# Strategic Leadership Projects
+
+- **StatGen Consulting Foundation and Growth:** Founded and developed a specialized statistical consulting firm from the ground up, establishing business infrastructure, marketing strategy, client acquisition processes, and service delivery frameworks that positioned the company as a niche expert in the competitive genomics analytics landscape.
+
+- **National Marrow Donor Program Research Initiative:** Led strategic development of a novel donor optimization research program, securing substantial funding through competitive grants, managing cross-functional teams, and developing intellectual property that strengthened the organization's market position.
+
+- **International Research Consortium Leadership:** Coordinated multi-institution research networks across multiple countries, managing diverse stakeholders, budget allocation, and project timelines to deliver high-impact scientific outcomes with practical applications.
+
+- **Software Product Development:** Directed the development process for multiple commercial-grade statistical software packages from concept to release, managing development teams, feature prioritization, and deployment strategies that resulted in widespread adoption by research communities.
 
 # Career Summary
--   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
--   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
+-   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Lead strategic research initiatives and cross-functional teams focused on stem cell transplant optimization. Direct grant acquisition strategy and patent application development, while managing organizational expansion into AI-driven clinical decision support.
+-   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Established new data analysis frameworks and predictive modeling approaches that transformed the organization's analytical capabilities and operational efficiency.
 - **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** Conducted research on methods for combining heterogeneous genomic and phenotypic datasets and prepared statistical software for data analysis.
 - **Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):** Provided statistical consulting services for researchers at Cornell University, including the preparation and presentation of statistics workshops.
 - **Postdoctoral Research Associate, Department of Plant Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 - 2017):** Focused on research developing new methodologies in genomic selection and prediction, mixed models, and machine learning, advising graduate students and preparing statistical software.
@@ -78,7 +96,13 @@ library(visNetwork)
 # Publications
 
 ```{r references, echo=FALSE, as.is=TRUE}
-vitae::bibliography_entries(params$bib_file)
+# Fallback to direct path if params not available
+bib_path <- if(!exists("params") || is.null(params$bib_file)) {
+  "/Users/denizakdemir/Dropbox/dakdemirGithub/GitHubProjects/vitaeDenizAkdemir/data/DA_bibliography.bib"
+} else {
+  params$bib_file
+}
+vitae::bibliography_entries(bib_path)
 ```
 
 # Education

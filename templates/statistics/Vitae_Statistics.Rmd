@@ -1,6 +1,6 @@
 # Professional Profile
 
-Deniz Akdemir is a statistician with advanced expertise in statistical modeling, experimental design, and data analysis. His career spans academic research and applied statistics across healthcare, finance, and genomics, where he leverages quantitative methods to derive actionable insights from complex data.
+Deniz Akdemir is a PhD statistician with advanced expertise in statistical methodology, experimental design, and complex data analysis. His highly-cited research (3,400+ citations) has established new statistical approaches for genomic prediction, mixed models, and high-dimensional data analysis. His career spans academic research and applied statistics across healthcare, agriculture, and clinical data analysis, where he leverages sophisticated quantitative methods to derive actionable insights from complex datasets. He is the creator of multiple statistical software packages including EMMREML and ml4t2e, which bridge traditional statistical theory with modern machine learning approaches.
 
 # Core Competencies
 
@@ -13,11 +13,15 @@ Deniz Akdemir is a statistician with advanced expertise in statistical modeling,
 # Professional Experience
 
 - **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)  
-  Lead statistical analysis and design of clinical trials, improving study efficiency and decision-making.
+  Lead complex statistical analyses of clinical transplant data, designing advanced statistical frameworks for stem cell transplant optimization, developing novel methodologies for time-to-event data analysis in clinical settings.
+- **Statistical Methods Developer**, Independent Research (2010 - Present)  
+  Created the EMMREML package for fitting mixed models with known covariance structures, developed novel statistical approaches for high-dimensional data analysis, pioneered methodologies for training set optimization in predictive modeling.
 - **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)  
-  Developed predictive models and data-driven insights to optimize business strategies.
-- **Postdoctoral Research Associate**, University College Dublin (2019 - 2021)  
-  Conducted research in innovative statistical methodologies and contributed to high-impact publications.
+  Applied rigorous statistical methodologies to patient outcome data, implemented Bayesian approaches to uncertainty quantification, developed predictive statistical models for clinical decision support.
+- **Statistical Consultant**, Cornell Statistical Consulting Unit (2017 - 2019)  
+  Provided expert statistical guidance to academic researchers across disciplines, designed experimental studies, performed complex data analyses, and delivered statistical training workshops.
+- **Statistical Methods Researcher**, University College Dublin & Cornell University (2011 - 2021)  
+  Conducted groundbreaking research in statistical methodologies for complex data structures, published extensively on novel statistical approaches, and developed computational tools for statistical analysis.
 
 # Education
 
@@ -28,7 +32,7 @@ Deniz Akdemir is a statistician with advanced expertise in statistical modeling,
 
 # Research Interests
 
-His research focuses on the development and application of robust statistical methods, including Bayesian modeling, time series analysis, and nonparametric techniques, to solve real-world challenges in various domains.
+Deniz's research focuses on the development and application of advanced statistical methodologies for complex data structures. His work spans Bayesian methods, mixed models, high-dimensional data analysis, and the integration of statistical theory with machine learning applications. He has made significant contributions to statistical methodologies for genomic prediction and selection, with applications in both plant breeding and clinical data analysis. His recent interests include developing statistical frameworks for machine learning applied to time-to-event data, Bayesian optimization techniques, and methods for sparse data in longitudinal settings.
 
 # Collaboration Network
 
@@ -52,11 +56,12 @@ library(visNetwork)
 
 # Core Skills
 
-- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
-- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
-- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
-- **Software Development:** Development of research and commercial grade software.
-- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
+- **Statistical Methodology:** Advanced multivariate analysis, Bayesian and frequentist methods, time series analysis, high-dimensional data modeling, mixed models, nonparametric statistics, survival analysis.
+- **Data Analysis & Modeling:** Experimental design, hypothesis testing, regression analysis, statistical learning, model validation, predictive analytics, data visualization techniques.
+- **Machine Learning Integration:** Statistical foundations for machine learning, dimensionality reduction, ensemble methods, cross-validation strategies, Bayesian optimization.
+- **Statistical Computing:** Expert in R (package development, performance optimization), proficient in SAS, Python, and C++ for statistical programming and high-performance computing.
+- **Software Development:** Creator of the EMMREML package for mixed models with known covariance structures, developer of ml4t2e for machine learning in time-to-event data.
+- **Applied Statistics:** Extensive experience applying statistical methods to real-world problems in genomics, clinical trials, agriculture, and financial modeling.
 
 
 # Career Summary
@@ -68,15 +73,31 @@ library(visNetwork)
 - **Visiting Assistant Professor, Department of Statistics and Actuarial Science, University of Central Florida, Orlando, FL, USA (2010 - 2011):** Responsibilities included teaching Data Mining Methodology, Theoretical Statistics, Applied Time Series Analysis, and Nonparametric Statistics.
 - **Visiting Assistant Professor, Department of Mathematics and Statistics, Ohio Northern University, Ada, OH, USA (2009 - 2010):** Taught Statistics for Professionals, Statistics for Engineers, and Statistical Computing, catering to various undergraduate levels.
 
-# Workshops and Training Sessions
+# Key Statistical Projects
 
-- **Genomic Assisted Breeding Workshops:** Conducted workshops in the USA, Ireland, Spain, and Belgium, educating the agricultural community on genomic technologies.
-- **Public Speaking:** Presented at various international conferences including EFI conference in Geneva and ASHI Annual Meeting in San Antonio.
+- **EMMREML Statistical Package:** Developed a specialized R package for fitting mixed models with known covariance structures, implementing efficient algorithms for large-scale genomic data analysis that significantly outperform standard implementations in computation time.
+
+- **Statistical Frameworks for High-dimensional Data:** Created novel statistical methodologies for analyzing high-dimensional data with complex correlation structures, with particular applications in genomics and multi-omics integration.
+
+- **Bayesian Optimization Methods:** Implemented advanced Bayesian approaches for experimental design optimization and statistical model parameter tuning, enhancing efficiency in resource-limited research settings.
+
+- **Time-to-Event Data Analysis Innovations:** Developed new statistical methods bridging survival analysis with machine learning techniques, resulting in the ml4t2e package that enables more accurate prediction of time-to-event outcomes in clinical and biological applications.
+
+# Statistical Workshops and Training
+
+- **Applied Statistical Methods:** Conducted comprehensive workshops at Cornell University on advanced statistical techniques for researchers across disciplines, focusing on practical implementation and interpretation.
+- **Statistical Computing:** Delivered specialized training in R programming for statistical analysis, covering package development and efficient computation for large datasets.
 
 # Publications
 
 ```{r references, echo=FALSE, as.is=TRUE}
-vitae::bibliography_entries(params$bib_file)
+# Fallback to direct path if params not available
+bib_path <- if(!exists("params") || is.null(params$bib_file)) {
+  "/Users/denizakdemir/Dropbox/dakdemirGithub/GitHubProjects/vitaeDenizAkdemir/data/DA_bibliography.bib"
+} else {
+  params$bib_file
+}
+vitae::bibliography_entries(bib_path)
 ```
 
 # Education

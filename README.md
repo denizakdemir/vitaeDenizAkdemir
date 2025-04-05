@@ -1,6 +1,6 @@
 # Deniz Akdemir - CV/Resume Repository
 
-This repository contains multiple versions of my CV/resume, each tailored to highlight different aspects of my expertise (Statistics, Statistical Genomics, AI/ML, and a general version).
+This repository contains multiple versions of my CV/resume, each tailored to highlight different aspects of my expertise (Statistics, Statistical Genomics, AI/ML, Executive, and a general version). These are automatically generated from structured data and templates to maintain consistency across all versions.
 
 ## Repository Structure
 
@@ -40,11 +40,43 @@ This repository contains multiple versions of my CV/resume, each tailored to hig
 
 ## Usage
 
-1. Clone this repository
-2. Install required R packages
-3. Choose a template from the templates directory
-4. Run the R Markdown file to generate your CV
-5. To update your publications from Google Scholar, run the script in scripts/update_bibliography.R
+### For quick updates
+
+The simplest way to update all CVs and bibliography at once is to use the comprehensive update script:
+
+```bash
+Rscript scripts/update_and_generate.R
+```
+
+This will:
+1. Update the bibliography from Google Scholar
+2. Regenerate all CV variants (both PDF and HTML)
+3. Update the last modified date in the index.html page
+
+### For manual updates
+
+If you prefer to update components individually:
+
+1. **Update bibliography only**:
+   ```bash
+   Rscript scripts/update_bibliography.R
+   ```
+
+2. **Generate all CVs**:
+   ```bash
+   Rscript scripts/update_all_cvs.R
+   ```
+
+3. **Finding your Google Scholar ID**:
+   ```bash
+   Rscript scripts/scholar_profile_finder.R
+   ```
+
+4. **Generate a single CV**:
+   Open a specific template in RStudio and click the "Knit" button, or use:
+   ```bash
+   Rscript -e "rmarkdown::render('templates/general/Vitae_General.Rmd', output_dir='outputs')"
+   ```
 
 ## License
 

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deniz Akdemir - Professional Profiles</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        .cv-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .cv-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cv-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .cv-header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .cv-header.ai-ml {
+            background-color: #9b59b6;
+        }
+        .cv-header.statistics {
+            background-color: #2ecc71;
+        }
+        .cv-header.genomics {
+            background-color: #e74c3c;
+        }
+        .cv-header.executive {
+            background-color: #f39c12;
+        }
+        .cv-header h3 {
+            margin: 0;
+            font-size: 1.3em;
+        }
+        .cv-content {
+            padding: 20px;
+        }
+        .cv-description {
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        .cv-links {
+            display: flex;
+            justify-content: space-around;
+        }
+        .cv-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #f5f5f5;
+            color: #333;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+        .cv-link:hover {
+            background-color: #e0e0e0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 40px;
+        }
+        .footer-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+        .update-date {
+            margin-top: 10px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Deniz Akdemir</h1>
+            <div class="subtitle">PhD in Statistics | Senior Clinical Data Scientist | StatGen Consulting Owner</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="cv-container">
+            <!-- General CV -->
+            <div class="cv-card">
+                <div class="cv-header">
+                    <h3>General CV</h3>
+                </div>
+                <div class="cv-content">
+                    <div class="cv-description">
+                        A comprehensive overview of my professional experience, focusing on my statistical background and data science expertise.
+                    </div>
+                    <div class="cv-links">
+                        <a href="outputs/Vitae_General.pdf" class="cv-link">PDF</a>
+                        <a href="outputs/Vitae_General.html" class="cv-link">HTML</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI/ML CV -->
+            <div class="cv-card">
+                <div class="cv-header ai-ml">
+                    <h3>AI & Machine Learning</h3>
+                </div>
+                <div class="cv-content">
+                    <div class="cv-description">
+                        Highlights my expertise in artificial intelligence, machine learning algorithms, and computational intelligence applications.
+                    </div>
+                    <div class="cv-links">
+                        <a href="outputs/Vitae_AI_ML.pdf" class="cv-link">PDF</a>
+                        <a href="outputs/Vitae_AI_ML.html" class="cv-link">HTML</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics CV -->
+            <div class="cv-card">
+                <div class="cv-header statistics">
+                    <h3>Statistics</h3>
+                </div>
+                <div class="cv-content">
+                    <div class="cv-description">
+                        Focuses on my statistical methodology work, including multivariate analysis, Bayesian methods, and high-dimensional data modeling.
+                    </div>
+                    <div class="cv-links">
+                        <a href="outputs/Vitae_Statistics.pdf" class="cv-link">PDF</a>
+                        <a href="outputs/Vitae_Statistics.html" class="cv-link">HTML</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Genomics CV -->
+            <div class="cv-card">
+                <div class="cv-header genomics">
+                    <h3>Statistical Genomics</h3>
+                </div>
+                <div class="cv-content">
+                    <div class="cv-description">
+                        Emphasizes my research in statistical genetics and genomics, genomic selection, and breeding program optimization.
+                    </div>
+                    <div class="cv-links">
+                        <a href="outputs/Vitae_Genomics.pdf" class="cv-link">PDF</a>
+                        <a href="outputs/Vitae_Genomics.html" class="cv-link">HTML</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Executive CV -->
+            <div class="cv-card">
+                <div class="cv-header executive">
+                    <h3>Executive</h3>
+                </div>
+                <div class="cv-content">
+                    <div class="cv-description">
+                        Highlights my leadership experience, strategic planning abilities, and professional management skills.
+                    </div>
+                    <div class="cv-links">
+                        <a href="outputs/Vitae_Executive.pdf" class="cv-link">PDF</a>
+                        <a href="outputs/Vitae_Executive.html" class="cv-link">HTML</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Deniz Akdemir. All rights reserved.</p>
+            <p>
+                <a href="https://scholar.google.com/citations?user=O_xha20AAAAJ&hl=en" class="footer-link" target="_blank">Google Scholar</a> | 
+                <a href="https://www.researchgate.net/profile/Deniz-Akdemir" class="footer-link" target="_blank">ResearchGate</a>
+            </p>
+            <div class="update-date">Last Updated: April 5, 2025</div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -50,11 +50,11 @@ library(visNetwork)
 
 # Core Skills
 
-- **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
-- **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
-- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
-- **Software Development:** Development of research and commercial grade software.
-- **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
+- **Machine Learning & AI:** Deep learning architectures, neural networks, reinforcement learning, natural language processing, computer vision, predictive modeling, feature engineering, ensemble methods.
+- **Statistical Methods:** Multivariate analysis, Bayesian methods, time series analysis, high-dimensional data modeling, anomaly detection, classification algorithms.
+- **Data Science:** Data mining, exploratory data analysis, A/B testing, experimental design, causal inference, predictive modeling, data visualization.
+- **Programming & Tools:** Advanced R, Python (NumPy, Pandas, PyTorch, TensorFlow, scikit-learn), SQL, cloud computing (AWS, Azure), big data technologies (Spark).
+- **Applied Research:** Clinical data analysis, genomic data integration, algorithm development, optimization techniques, model deployment, interpretability methods.
 
 
 # Career Summary

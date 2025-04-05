@@ -23,8 +23,8 @@ library(bibtex)
 # It will look something like: https://scholar.google.com/citations?user=XXXXXXXXXXXX
 # The ID is the value after 'user='
 # NOTE: Replace this with your actual Google Scholar ID
-# For demonstration purposes, we'll use a public scholar ID (Geoffrey Hinton's)
-google_scholar_id <- "JicYPdAAAAAJ"
+# Use Deniz Akdemir's Google Scholar ID
+google_scholar_id <- "O_xha20AAAAJ"
 
 cat("Fetching publications from Google Scholar...\n")
 

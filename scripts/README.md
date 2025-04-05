@@ -4,7 +4,16 @@ This directory contains scripts for managing and generating CV templates.
 
 ## Scripts
 
-- **update_bibliography.R**: Script to update bibliography from Google Scholar
+- **update_and_generate.R**: Comprehensive script to update bibliography and generate all CVs
+  ```bash
+  Rscript update_and_generate.R
+  ```
+  This is the recommended script for regular maintenance as it:
+  - Updates your bibliography from Google Scholar
+  - Generates all CV variants (both PDF and HTML)
+  - Updates the last modified date in the index.html
+
+- **update_bibliography.R**: Script to update bibliography from Google Scholar only
   ```bash
   Rscript update_bibliography.R
   ```
@@ -27,8 +36,11 @@ This directory contains scripts for managing and generating CV templates.
 ## Requirements
 
 These scripts require R with the following packages:
-- vitae
-- rmarkdown
-- knitr
-- scholar
-- bibtex
+- vitae (for CV generation)
+- rmarkdown (for rendering Rmd files)
+- knitr (for document generation)
+- scholar (for Google Scholar integration)
+- bibtex (for bibliography handling)
+- igraph and visNetwork (for collaboration network visualization)
+
+The `update_and_generate.R` script will automatically install any missing packages.

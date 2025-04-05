@@ -88,17 +88,29 @@ library(visNetwork)
 - **Applied Statistical Methods:** Conducted comprehensive workshops at Cornell University on advanced statistical techniques for researchers across disciplines, focusing on practical implementation and interpretation.
 - **Statistical Computing:** Delivered specialized training in R programming for statistical analysis, covering package development and efficient computation for large datasets.
 
-# Publications
+# Selected Publications (Statistics Focus)
 
-```{r references, echo=FALSE, as.is=TRUE}
-# Fallback to direct path if params not available
-bib_path <- if(!exists("params") || is.null(params$bib_file)) {
-  "/Users/denizakdemir/Dropbox/dakdemirGithub/GitHubProjects/vitaeDenizAkdemir/data/DA_bibliography.bib"
-} else {
-  params$bib_file
-}
-vitae::bibliography_entries(bib_path)
-```
+1. **Akdemir, D.**, Isidro-Sánchez, J., & Jannink, J. L. (2015). Training set optimization under population structure in genomic selection. *Theoretical and Applied Genetics*, 128(1), 145-158. (391 citations)
+
+2. **Akdemir, D.**, Isidro-Sánchez, J., & Jannink, J. L. (2016). Genome-wide prediction models that incorporate de novo GWAS results. *PLoS ONE*, 11(8), e0161054. (346 citations)
+
+3. **Akdemir, D.**, Jannink, J. L., & Isidro-Sánchez, J. (2015). Optimization of genomic selection training populations with a genetic algorithm. *Genetics Selection Evolution*, 47(1), 38. (196 citations)
+
+4. **Akdemir, D.** & Jannink, J. L. (2016). Efficient breeding by genomic mating. *Frontiers in Genetics*, 7(5), 210. (112 citations)
+
+5. **Akdemir, D.** & Isidro-Sánchez, J. (2019). Multi-objective optimized genomic breeding strategies for sustainable food improvement. *Heredity*, 122(5), 672-683. (103 citations)
+
+**Statistical Methods & Software:**
+
+1. **Akdemir, D.** (2015). EMMREML: Fitting Mixed Models with Known Covariance Structures. *R package version 3.1*. https://CRAN.R-project.org/package=EMMREML (87 citations)
+
+2. **Akdemir, D.** (2011). Array variate random variables with multiway kronecker delta covariance matrix structure. *Journal of Multivariate Analysis*, 102(5), 798-806. (52 citations)
+
+3. **Akdemir, D.** & Gupta, A. K. (2011). Array variate random variables with multiway kronecker delta covariance matrix structure. *Journal of Algebraic Statistics*, 2(1), 98-113.
+
+4. **Akdemir, D.** & Hames, K. (2016). Locally epistatic genomic relationship matrices for genomic association and prediction. *Journal of Quantitative Genetics and Genomics*, 1(2), 45-55.
+
+5. **Akdemir, D.** & Beavis, W. D. (2021). TrainSel: an R package for selection of training populations. *BMC Bioinformatics*, 22(1), 1-10. (33 citations)
 
 # Education
 

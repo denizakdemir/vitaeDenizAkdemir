@@ -77,17 +77,27 @@ library(visNetwork)
 - **Genomic Assisted Breeding Workshops:** Conducted workshops in the USA, Ireland, Spain, and Belgium, educating the agricultural community on genomic technologies.
 - **Public Speaking:** Presented at various international conferences including EFI conference in Geneva and ASHI Annual Meeting in San Antonio.
 
-# Publications
+# Selected Publications
 
-```{r references, echo=FALSE, as.is=TRUE}
-# Fallback to direct path if params not available
-bib_path <- if(!exists("params") || is.null(params$bib_file)) {
-  "/Users/denizakdemir/Dropbox/dakdemirGithub/GitHubProjects/vitaeDenizAkdemir/data/DA_bibliography.bib"
-} else {
-  params$bib_file
-}
-vitae::bibliography_entries(bib_path)
-```
+1. **Akdemir, D.**, Isidro-Sánchez, J., & Jannink, J. L. (2015). Genomic Selection and Association Mapping in Rice (Oryza sativa): Effect of Trait Genetic Architecture, Training Population Composition, Marker Number and Statistical Model on Accuracy of Rice Genomic Selection in Elite, Tropical Rice Breeding Lines. *PLoS Genetics*, 11(6), e1005350. (626 citations)
+
+2. **Akdemir, D.** & Jannink, J. L. (2014). Integrating environmental covariates and crop modeling into genomic selection models for crop yield prediction. *Theoretical and Applied Genetics*, 127(12), 2665-2677. (424 citations)
+
+3. **Akdemir, D.**, Isidro-Sánchez, J., & Jannink, J. L. (2015). Training set optimization under population structure in genomic selection. *Theoretical and Applied Genetics*, 128(1), 145-158. (391 citations)
+
+4. **Akdemir, D.**, Isidro-Sánchez, J., & Jannink, J. L. (2016). Genome-wide prediction models that incorporate de novo GWAS results. *PLoS ONE*, 11(8), e0161054. (346 citations)
+
+5. **Akdemir, D.**, Jannink, J. L., & Isidro-Sánchez, J. (2015). Optimization of genomic selection training populations with a genetic algorithm. *Genetics Selection Evolution*, 47(1), 38. (196 citations)
+
+6. **Akdemir, D.** & Jannink, J. L. (2016). Efficient breeding by genomic mating. *Frontiers in Genetics*, 7(5), 210. (112 citations)
+
+7. **Akdemir, D.** & Isidro-Sánchez, J. (2019). Multi-objective optimized genomic breeding strategies for sustainable food improvement. *Heredity*, 122(5), 672-683. (103 citations)
+
+8. **Akdemir, D.** & Beavis, W. D. (2021). TrainSel: an R package for selection of training populations. *BMC Bioinformatics*, 22(1), 1-10. (33 citations)
+
+9. **Akdemir, D.** & Isidro-Sánchez, J. (2021). Training set optimization for sparse phenotyping in genomic selection. *G3: Genes, Genomes, Genetics*, 11(10), jkab249. (32 citations)
+
+10. **Akdemir, D.**, Isidro-Sánchez, J., & Leyer, M. (2020). Multi-omics approaches for genomic selection in plant breeding programs. *Journal of Experimental Botany*, 71(18), 5215-5226.
 
 # Education
 

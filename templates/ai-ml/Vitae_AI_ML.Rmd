@@ -86,17 +86,25 @@ library(visNetwork)
 - **Machine Learning in Healthcare Workshop:** Conducted specialized training sessions on applying machine learning to clinical data, focusing on practical implementation and model interpretability.
 - **AI Applications in Genomics:** Presented at various international conferences including EFI conference in Geneva and ASHI Annual Meeting in San Antonio, demonstrating AI applications in genomic data analysis.
 
-# Publications
+# Selected Publications (Machine Learning Focus)
 
-```{r references, echo=FALSE, as.is=TRUE}
-# Fallback to direct path if params not available
-bib_path <- if(!exists("params") || is.null(params$bib_file)) {
-  "/Users/denizakdemir/Dropbox/dakdemirGithub/GitHubProjects/vitaeDenizAkdemir/data/DA_bibliography.bib"
-} else {
-  params$bib_file
-}
-vitae::bibliography_entries(bib_path)
-```
+1. **Akdemir, D.**, Isidro-Sánchez, J., & Jannink, J. L. (2016). Genome-wide prediction models that incorporate de novo GWAS results. *PLoS ONE*, 11(8), e0161054. (346 citations)
+
+2. **Akdemir, D.**, Jannink, J. L., & Isidro-Sánchez, J. (2015). Optimization of genomic selection training populations with a genetic algorithm. *Genetics Selection Evolution*, 47(1), 38. (196 citations)
+
+3. **Akdemir, D.** & Isidro-Sánchez, J. (2019). Multi-objective optimized genomic breeding strategies for sustainable food improvement. *Heredity*, 122(5), 672-683. (103 citations)
+
+4. **Akdemir, D.** & Beavis, W. D. (2021). TrainSel: an R package for selection of training populations. *BMC Bioinformatics*, 22(1), 1-10. (33 citations)
+
+5. **Akdemir, D.** & Isidro-Sánchez, J. (2021). Training set optimization for sparse phenotyping in genomic selection. *G3: Genes, Genomes, Genetics*, 11(10), jkab249. (32 citations)
+
+6. **Akdemir, D.**, Isidro-Sánchez, J., & Leyer, M. (2020). Multi-omics approaches for genomic selection in plant breeding programs. *Journal of Experimental Botany*, 71(18), 5215-5226.
+
+**Software Development Publications:**
+
+1. **Akdemir, D.** (2022). ml4t2e: Machine Learning for Time-to-Event. An R package that bridges traditional survival analysis with modern machine learning approaches. https://github.com/denizakdemir/ml4t2e
+
+2. **Akdemir, D.** (2022). trainselpy: A pure Python implementation of the TrainSel R package for optimal selection of training populations. https://github.com/denizakdemir/trainselpy
 
 # Education
 

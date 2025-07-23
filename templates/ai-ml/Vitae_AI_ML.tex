@@ -1,0 +1,418 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 8 February 2019
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{HTML}{3873B3}% custom
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\def\donothing#1{#1}
+\def\emaillink#1{#1}
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,footskip=60pt]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+
+% personal data
+\name{}{Dr.~Deniz Akdemir}
+\title{Senior Clinical Data Scientist - Statistical Genomics Consultant}
+\address{Bowling Green, Ohio, USA}{}{}
+
+\phone[mobile]{+1 607 262 6875} % Phone number
+\email{\donothing{\href{mailto:deniz.akdemir.work@gmail.com}{\nolinkurl{deniz.akdemir.work@gmail.com}}}}
+\homepage{denizakdemir.github.io} % Personal website
+\social[linkedin]{deniz-akdemir-50735314a}
+
+\social[github]{denizakdemir}
+
+
+
+
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+
+
+
+% Pandoc CSL macros
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+
+\section{Professional Profile}\label{professional-profile}
+
+Deniz Akdemir is an AI/ML specialist with extensive experience in
+machine learning, data analytics, and computational intelligence. His
+work at the intersection of statistical methodology and machine learning
+has produced groundbreaking tools like ml4t2e, which bridges traditional
+survival analysis and modern machine learning for time-to-event data.
+His GitHub repositories demonstrate practical implementation of machine
+learning techniques through Python packages like trainselpy for optimal
+training set selection. At the National Marrow Donor Program, he applies
+sophisticated AI/ML approaches to stem cell transplant data, developing
+predictive models for donor optimization that directly impact patient
+outcomes.
+
+\section{Core Competencies}\label{core-competencies}
+
+\begin{itemize}
+\tightlist
+\item
+  Machine Learning \& Deep Learning
+\item
+  Data Analytics and Visualization
+\item
+  Algorithm Development
+\item
+  Statistical Modeling
+\item
+  Research \& Innovation
+\end{itemize}
+
+\section{Professional Experience}\label{professional-experience}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Senior Clinical Data Scientist}, National Marrow Donor Program
+  (2023 - Current)\\
+  Leading machine learning initiatives for donor-recipient matching
+  optimization using advanced predictive models and deep learning
+  approaches for clinical outcome prediction.
+\item
+  \textbf{Clinical Data Scientist}, National Marrow Donor Program (2021
+  - 2023)\\
+  Applied statistical and machine learning methods to stem cell
+  transplant data, developing novel algorithms for patient outcome
+  prediction and donor selection optimization.
+\item
+  \textbf{Open Source ML Developer}, GitHub (2019 - Present)\\
+  Developed ml4t2e (Machine Learning for Time-to-Event) package that
+  bridges traditional survival analysis with modern machine learning
+  approaches and trainselpy for optimizing training populations using
+  Python.
+\item
+  \textbf{ML \& AI Researcher}, University College Dublin (2019 -
+  2021)\\
+  Researched machine learning applications for heterogeneous data
+  integration, developing novel algorithms for combining genomic and
+  phenotypic datasets.
+\end{itemize}
+
+\section{Education}\label{education}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{PhD. in Statistics}, Bowling Green State University (2009)
+\item
+  \textbf{M.A.~in Applied Statistics}, Bowling Green State University
+  (2004)
+\item
+  \textbf{M.S. in Statistics}, Middle East Technical University (2003)
+\item
+  \textbf{B.A. in Business Administration}, Middle East Technical
+  University, Ankara, Turkey, 1999.
+\end{itemize}
+
+\section{Research Interests}\label{research-interests}
+
+Deniz's research focuses on integrating statistical methods with machine
+learning to create robust and interpretable AI models. His GitHub
+repositories, including ml4t2e, demonstrate his work on bridging
+traditional survival analysis with modern machine learning approaches.
+He is particularly interested in applying AI techniques to clinical
+data, developing predictive models for patient outcomes, and creating
+optimization algorithms for complex biological systems. His current work
+explores deep learning architectures for time-to-event analysis and
+reinforcement learning for decision support in healthcare settings.
+
+\section{Collaboration Network}\label{collaboration-network}
+
+\pandocbounded{\includegraphics[keepaspectratio]{Vitae_AI_ML_files/figure-latex/coauthor_network-1.png}}
+
+\section{Core Skills}\label{core-skills}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Machine Learning \& AI:} Deep learning architectures, neural
+  networks, reinforcement learning, natural language processing,
+  computer vision, predictive modeling, feature engineering, ensemble
+  methods.
+\item
+  \textbf{Statistical Methods:} Multivariate analysis, Bayesian methods,
+  time series analysis, high-dimensional data modeling, anomaly
+  detection, classification algorithms.
+\item
+  \textbf{Data Science:} Data mining, exploratory data analysis, A/B
+  testing, experimental design, causal inference, predictive modeling,
+  data visualization.
+\item
+  \textbf{Programming \& Tools:} Expert in R and Python (NumPy, Pandas,
+  PyTorch, TensorFlow, scikit-learn), proficient in SAS and C++, SQL,
+  cloud computing (AWS, Azure), big data technologies (Spark).
+\item
+  \textbf{Applied Research:} Clinical data analysis, genomic data
+  integration, algorithm development, optimization techniques, model
+  deployment, interpretability methods.
+\end{itemize}
+
+\section{Career Summary}\label{career-summary}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Senior Clinical Data Scientist, National Marrow Donor Program,
+  Minneapolis, USA (2023 - Current):} Engaged in statistical and machine
+  learning analysis of stem cell transplant data, focusing on research
+  into donor optimization. Applied for grants and submitted manuscripts
+  to peer-reviewed journals. Wrote patent applications.
+\item
+  \textbf{Clinical Data Scientist, National Marrow Donor Program,
+  Minneapolis, USA (2021 - 2023):} Engaged in statistical and machine
+  learning analysis of stem cell transplant data, focusing on research
+  into donor optimization.
+\item
+  \textbf{Postdoctoral Research Associate, School of Agriculture and
+  Food Science, University College Dublin, Dublin, Ireland (2019 -
+  2021):} Conducted research on methods for combining heterogeneous
+  genomic and phenotypic datasets and prepared statistical software for
+  data analysis.
+\item
+  \textbf{Statistical Consultant, Cornell Statistical Consulting Unit,
+  Cornell University, Ithaca, NY, USA (2017 - 2019):} Provided
+  statistical consulting services for researchers at Cornell University,
+  including the preparation and presentation of statistics workshops.
+\item
+  \textbf{Postdoctoral Research Associate, Department of Plant Breeding
+  and Genetics, Cornell University, Ithaca, NY, USA (2011 - 2017):}
+  Focused on research developing new methodologies in genomic selection
+  and prediction, mixed models, and machine learning, advising graduate
+  students and preparing statistical software.
+\item
+  \textbf{Visiting Assistant Professor, Department of Statistics and
+  Actuarial Science, University of Central Florida, Orlando, FL, USA
+  (2010 - 2011):} Responsibilities included teaching Data Mining
+  Methodology, Theoretical Statistics, Applied Time Series Analysis, and
+  Nonparametric Statistics.
+\item
+  \textbf{Visiting Assistant Professor, Department of Mathematics and
+  Statistics, Ohio Northern University, Ada, OH, USA (2009 - 2010):}
+  Taught Statistics for Professionals, Statistics for Engineers, and
+  Statistical Computing, catering to various undergraduate levels.
+\end{itemize}
+
+\section{Key AI/ML Projects}\label{key-aiml-projects}
+
+\begin{itemize}
+\item
+  \textbf{ml4t2e (Machine Learning for Time-to-Event):} Developed an
+  open-source framework that bridges traditional survival analysis with
+  modern machine learning approaches, enabling more accurate prediction
+  of time-to-event outcomes in clinical settings. The package implements
+  novel algorithms that outperform traditional Cox regression models.
+\item
+  \textbf{Deep Learning for Donor-Recipient Matching:} Leading a neural
+  network approach to optimize stem cell transplant outcomes by modeling
+  complex interactions between donor and recipient genetic and clinical
+  variables, significantly improving prediction accuracy compared to
+  traditional methods.
+\item
+  \textbf{Reinforcement Learning for Clinical Decision Support:}
+  Implementing reinforcement learning algorithms to optimize sequential
+  treatment decisions in healthcare settings, with applications in
+  personalized medicine and treatment planning optimization.
+\item
+  \textbf{trainselpy:} Developed a Python implementation of training
+  population optimization algorithms, employing advanced machine
+  learning techniques including genetic algorithms and simulated
+  annealing to improve predictive model performance through strategic
+  data selection.
+\end{itemize}
+
+\section{Workshops and Training
+Sessions}\label{workshops-and-training-sessions}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Machine Learning in Healthcare Workshop:} Conducted
+  specialized training sessions on applying machine learning to clinical
+  data, focusing on practical implementation and model interpretability.
+\item
+  \textbf{AI Applications in Genomics:} Presented at various
+  international conferences including EFI conference in Geneva and ASHI
+  Annual Meeting in San Antonio, demonstrating AI applications in
+  genomic data analysis.
+\end{itemize}
+
+\section{Selected Publications (Machine Learning
+Focus)}\label{selected-publications-machine-learning-focus}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Akdemir, D.}, Isidro-Sánchez, J., \& Jannink, J. L. (2016).
+  Genome-wide prediction models that incorporate de novo GWAS results.
+  \emph{PLoS ONE}, 11(8), e0161054. (346 citations)
+\item
+  \textbf{Akdemir, D.}, Jannink, J. L., \& Isidro-Sánchez, J. (2015).
+  Optimization of genomic selection training populations with a genetic
+  algorithm. \emph{Genetics Selection Evolution}, 47(1), 38. (196
+  citations)
+\item
+  \textbf{Akdemir, D.} \& Isidro-Sánchez, J. (2019). Multi-objective
+  optimized genomic breeding strategies for sustainable food
+  improvement. \emph{Heredity}, 122(5), 672-683. (103 citations)
+\item
+  \textbf{Akdemir, D.} \& Beavis, W. D. (2021). TrainSel: an R package
+  for selection of training populations. \emph{BMC Bioinformatics},
+  22(1), 1-10. (33 citations)
+\item
+  \textbf{Akdemir, D.} \& Isidro-Sánchez, J. (2021). Training set
+  optimization for sparse phenotyping in genomic selection. \emph{G3:
+  Genes, Genomes, Genetics}, 11(10), jkab249. (32 citations)
+\item
+  \textbf{Akdemir, D.}, Isidro-Sánchez, J., \& Leyer, M. (2020).
+  Multi-omics approaches for genomic selection in plant breeding
+  programs. \emph{Journal of Experimental Botany}, 71(18), 5215-5226.
+\end{enumerate}
+
+\textbf{Software Development Publications:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Akdemir, D.} (2022). ml4t2e: Machine Learning for
+  Time-to-Event. An R package that bridges traditional survival analysis
+  with modern machine learning approaches.
+  \url{https://github.com/denizakdemir/ml4t2e}
+\item
+  \textbf{Akdemir, D.} (2022). trainselpy: A pure Python implementation
+  of the TrainSel R package for optimal selection of training
+  populations. \url{https://github.com/denizakdemir/trainselpy}
+\end{enumerate}
+
+\section{Professional References}\label{professional-references}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Dr.~Yung-Tsi Bolon}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Affiliation:} Director, Immunobiology \& Bioinformatics
+    Research, NMDP, Minneapolis, Minnesota, United States
+  \item
+    \textbf{Relationship:} Supervisor at the National Marrow Donor
+    Program
+  \item
+    \textbf{Contact:}
+    \href{mailto:ybolon@nmdp.org}{\nolinkurl{ybolon@nmdp.org}}
+  \end{itemize}
+\item
+  \textbf{Dr.~Julio Isidro-Sanchez}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Affiliation:} Associate Professor: Centro de Biotecnologia y
+    Genomica de Plantas, Universidad Politecnica de Madrid, Instituto
+    Nacional de Investigacion y Tecnologia Agraria y Alimentaria, Campus
+    de Montegancedo - UPM, 28223-Pozuelo de Alarcon, Madrid, Spain
+  \item
+    \textbf{Relationship:} Expert in plant breeding and genetics,
+    collaborator on various projects
+  \item
+    \textbf{Contact:}
+    \href{mailto:j.isidro@upm.es}{\nolinkurl{j.isidro@upm.es}}
+  \end{itemize}
+\item
+  \textbf{Dr.~Jhonathan Pedroso}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Affiliation:} Research Scientist at Corteva Agriscience,
+    Corteva, Johnston, Iowa, USA
+  \item
+    \textbf{Relationship:} Industry partner in genomic tool development,
+    contributed to software enhancements
+  \item
+    \textbf{Contact:}
+    \href{mailto:jhowpd@gmail.com}{\nolinkurl{jhowpd@gmail.com}}
+  \end{itemize}
+\item
+  \textbf{Dr.~Lynn Johnson}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Affiliation:} Interim Director and Statistical Consultant,
+    Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY,
+    USA
+  \item
+    \textbf{Relationship:} Coworker at the Cornell Statistical
+    Consulting Unit
+  \item
+    \textbf{Contact:}
+    \href{mailto:lms86@cornell.edu}{\nolinkurl{lms86@cornell.edu}}
+  \end{itemize}
+\item
+  \textbf{Dr.~Roberto Fritsche Neto}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Affiliation:} Assistant Professor, Department of Plant,
+    Environmental Management \& Soil Sciences, LSU
+  \item
+    \textbf{Relationship:} Collaborator on various projects
+  \item
+    \textbf{Contact:}
+    \href{mailto:rneto1@lsu.edu}{\nolinkurl{rneto1@lsu.edu}}
+  \end{itemize}
+\end{itemize}
+
+
+\end{document}
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.

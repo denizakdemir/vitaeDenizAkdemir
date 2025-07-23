@@ -2,15 +2,17 @@
 graphics: yes
 name: "Dr. Deniz Akdemir"
 position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
-address: ""
-phone: "+1 607 262 6875 (USA) - +34 674 771 859 (Spain)"
+address: "Bowling Green, Ohio, USA"
+phone: "+1 607 262 6875"
 email: "deniz.akdemir.work@gmail.com"
 github: "denizakdemir"
+linkedin: "deniz-akdemir-50735314a"
+www: "denizakdemir.github.io"
 date: "`r format(Sys.Date(), '%B %Y')`"
 output: 
   vitae::moderncv:
     keep_tex: true
-csl: "csl/apa6-cv.csl"
+csl: "../csl/apa6-cv.csl"
 ---
 
 ```{r setup, include=FALSE}
@@ -22,14 +24,15 @@ library(vitae)
 
 - **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis and genotype by environment interactions, optimization of plant and animal breeding programs.
 - **Statistics:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, machine learning, deep learning, data science, biostatistics.
-- **Statistical Computation:** Proficient in R, SAS, Python, and C++ for statistical programming and analysis.
+- **Statistical Computation:** Expert in R and Python for statistical programming and analysis, proficient in SAS and C++.
 - **Software Development:** Development of research and commercial grade software.
 - **Management and administration:** Strategic planning, project management, team leadership, grant/patent writing, budgeting, accounting.
 
 
 # Career Summary
--   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
--   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
+
+- **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
+- **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
 - **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** Conducted research on methods for combining heterogeneous genomic and phenotypic datasets and prepared statistical software for data analysis.
 - **Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):** Provided statistical consulting services for researchers at Cornell University, including the preparation and presentation of statistics workshops.
 - **Postdoctoral Research Associate, Department of Plant Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 - 2017):** Focused on research developing new methodologies in genomic selection and prediction, mixed models, and machine learning, advising graduate students and preparing statistical software.
@@ -44,7 +47,7 @@ library(vitae)
 # Publications
 
 ```{r references, echo=FALSE, as.is=TRUE}
-vitae::bibliography_entries("DA_bibliograpgy.bib")
+vitae::bibliography_entries("../data/DA_bibliography.bib")
 ```
 
 # Education

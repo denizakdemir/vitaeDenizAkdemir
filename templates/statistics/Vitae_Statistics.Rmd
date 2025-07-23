@@ -1,3 +1,22 @@
+---
+graphics: yes
+name: "Dr. Deniz Akdemir"
+position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+address: "Bowling Green, Ohio, USA"
+phone: "+1 607 262 6875"
+email: "deniz.akdemir.work@gmail.com"
+github: "denizakdemir"
+linkedin: "deniz-akdemir-50735314a"
+www: "denizakdemir.github.io"
+date: "`r format(Sys.Date(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    keep_tex: true
+    includes:
+      in_header: "../../styles/header_include.tex"
+csl: "../../csl/apa6-cv.csl"
+---
+
 # Professional Profile
 
 Deniz Akdemir is a PhD statistician with advanced expertise in statistical methodology, experimental design, and complex data analysis. His highly-cited research (3,400+ citations) has established new statistical approaches for genomic prediction, mixed models, and high-dimensional data analysis. His career spans academic research and applied statistics across healthcare, agriculture, and clinical data analysis, where he leverages sophisticated quantitative methods to derive actionable insights from complex datasets. He is the creator of multiple statistical software packages including EMMREML and ml4t2e, which bridge traditional statistical theory with modern machine learning approaches.
@@ -59,14 +78,15 @@ library(visNetwork)
 - **Statistical Methodology:** Advanced multivariate analysis, Bayesian and frequentist methods, time series analysis, high-dimensional data modeling, mixed models, nonparametric statistics, survival analysis.
 - **Data Analysis & Modeling:** Experimental design, hypothesis testing, regression analysis, statistical learning, model validation, predictive analytics, data visualization techniques.
 - **Machine Learning Integration:** Statistical foundations for machine learning, dimensionality reduction, ensemble methods, cross-validation strategies, Bayesian optimization.
-- **Statistical Computing:** Expert in R (package development, performance optimization), proficient in SAS, Python, and C++ for statistical programming and high-performance computing.
+- **Statistical Computing:** Expert in R (package development, performance optimization) and Python for statistical programming, proficient in SAS and C++ for high-performance computing.
 - **Software Development:** Creator of the EMMREML package for mixed models with known covariance structures, developer of ml4t2e for machine learning in time-to-event data.
 - **Applied Statistics:** Extensive experience applying statistical methods to real-world problems in genomics, clinical trials, agriculture, and financial modeling.
 
 
 # Career Summary
--   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
--   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
+
+- **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
+- **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
 - **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** Conducted research in innovative statistical methodologies and contributed to high-impact publications.
 - **Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):** Provided statistical consulting services for researchers at Cornell University, including the preparation and presentation of statistics workshops.
 - **Postdoctoral Research Associate, Department of Plant Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 - 2017):** Focused on research developing new methodologies in genomic selection and prediction, mixed models, and machine learning, advising graduate students and preparing statistical software.

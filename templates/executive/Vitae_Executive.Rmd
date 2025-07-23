@@ -1,3 +1,22 @@
+---
+graphics: yes
+name: "Dr. Deniz Akdemir"
+position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+address: "Bowling Green, Ohio, USA"
+phone: "+1 607 262 6875"
+email: "deniz.akdemir.work@gmail.com"
+github: "denizakdemir"
+linkedin: "deniz-akdemir-50735314a"
+www: "denizakdemir.github.io"
+date: "`r format(Sys.Date(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    keep_tex: true
+    includes:
+      in_header: "../../styles/header_include.tex"
+csl: "../../csl/apa6-cv.csl"
+---
+
 # Professional Profile
 
 Deniz Akdemir is a seasoned leader with a proven track record in research management, strategic planning, and operational excellence in academic and clinical environments. As the owner of StatGen Consulting and Senior Clinical Data Scientist at the National Marrow Donor Program, he combines analytical expertise with visionary leadership to drive innovation and organizational growth. With a background spanning academic positions at Cornell University and University College Dublin, he has demonstrated excellence in project management, team leadership, and strategic decision-making. His success in securing funding, publishing high-impact research (86 publications with 30,000+ reads), and developing commercial-grade software showcases his ability to transform scientific expertise into practical business outcomes.
@@ -67,6 +86,7 @@ library(visNetwork)
 - **Team Leadership:** Team building and mentorship, talent recruitment and development, performance management, collaborative environment cultivation, delegation and empowerment.
 - **Stakeholder Management:** Board relations, client relationship management, partner engagement, interdepartmental collaboration, external agency coordination.
 - **Data-Driven Decision Making:** Analytics strategy development, business intelligence implementation, metrics definition, KPI monitoring, predictive modeling for business forecasting.
+- **Technical Leadership:** Expert in R and Python for advanced analytics, proficient in SAS and C++ for enterprise solutions, software development oversight, technology stack decisions.
 
 
 # Strategic Leadership Projects
@@ -80,8 +100,9 @@ library(visNetwork)
 - **Software Product Development:** Directed the development process for multiple commercial-grade statistical software packages from concept to release, managing development teams, feature prioritization, and deployment strategies that resulted in widespread adoption by research communities.
 
 # Career Summary
--   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Lead strategic research initiatives and cross-functional teams focused on stem cell transplant optimization. Direct grant acquisition strategy and patent application development, while managing organizational expansion into AI-driven clinical decision support.
--   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Established new data analysis frameworks and predictive modeling approaches that transformed the organization's analytical capabilities and operational efficiency.
+
+- **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Lead strategic research initiatives and cross-functional teams focused on stem cell transplant optimization. Direct grant acquisition strategy and patent application development, while managing organizational expansion into AI-driven clinical decision support.
+- **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Established new data analysis frameworks and predictive modeling approaches that transformed the organization's analytical capabilities and operational efficiency.
 - **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** Conducted research on methods for combining heterogeneous genomic and phenotypic datasets and prepared statistical software for data analysis.
 - **Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):** Provided statistical consulting services for researchers at Cornell University, including the preparation and presentation of statistics workshops.
 - **Postdoctoral Research Associate, Department of Plant Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 - 2017):** Focused on research developing new methodologies in genomic selection and prediction, mixed models, and machine learning, advising graduate students and preparing statistical software.

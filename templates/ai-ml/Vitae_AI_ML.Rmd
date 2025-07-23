@@ -1,3 +1,22 @@
+---
+graphics: yes
+name: "Dr. Deniz Akdemir"
+position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+address: "Bowling Green, Ohio, USA"
+phone: "+1 607 262 6875"
+email: "deniz.akdemir.work@gmail.com"
+github: "denizakdemir"
+linkedin: "deniz-akdemir-50735314a"
+www: "denizakdemir.github.io"
+date: "`r format(Sys.Date(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    keep_tex: true
+    includes:
+      in_header: "../../styles/header_include.tex"
+csl: "../../csl/apa6-cv.csl"
+---
+
 # Professional Profile
 
 Deniz Akdemir is an AI/ML specialist with extensive experience in machine learning, data analytics, and computational intelligence. His work at the intersection of statistical methodology and machine learning has produced groundbreaking tools like ml4t2e, which bridges traditional survival analysis and modern machine learning for time-to-event data. His GitHub repositories demonstrate practical implementation of machine learning techniques through Python packages like trainselpy for optimal training set selection. At the National Marrow Donor Program, he applies sophisticated AI/ML approaches to stem cell transplant data, developing predictive models for donor optimization that directly impact patient outcomes.
@@ -58,7 +77,7 @@ library(visNetwork)
 - **Machine Learning & AI:** Deep learning architectures, neural networks, reinforcement learning, natural language processing, computer vision, predictive modeling, feature engineering, ensemble methods.
 - **Statistical Methods:** Multivariate analysis, Bayesian methods, time series analysis, high-dimensional data modeling, anomaly detection, classification algorithms.
 - **Data Science:** Data mining, exploratory data analysis, A/B testing, experimental design, causal inference, predictive modeling, data visualization.
-- **Programming & Tools:** Advanced R, Python (NumPy, Pandas, PyTorch, TensorFlow, scikit-learn), SQL, cloud computing (AWS, Azure), big data technologies (Spark).
+- **Programming & Tools:** Expert in R and Python (NumPy, Pandas, PyTorch, TensorFlow, scikit-learn), proficient in SAS and C++, SQL, cloud computing (AWS, Azure), big data technologies (Spark).
 - **Applied Research:** Clinical data analysis, genomic data integration, algorithm development, optimization techniques, model deployment, interpretability methods.
 
 
@@ -105,13 +124,6 @@ library(visNetwork)
 1. **Akdemir, D.** (2022). ml4t2e: Machine Learning for Time-to-Event. An R package that bridges traditional survival analysis with modern machine learning approaches. https://github.com/denizakdemir/ml4t2e
 
 2. **Akdemir, D.** (2022). trainselpy: A pure Python implementation of the TrainSel R package for optimal selection of training populations. https://github.com/denizakdemir/trainselpy
-
-# Education
-
-- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
-- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
-- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
-- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
 
 # Professional References
 

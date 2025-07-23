@@ -38,3 +38,7 @@ tmp/
 .vscode/
 *.sublime-project
 *.sublime-workspace
+.claude/
+
+claude.md
+CLAUDE.md

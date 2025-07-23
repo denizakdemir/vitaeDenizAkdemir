@@ -1,3 +1,22 @@
+---
+graphics: yes
+name: "Dr. Deniz Akdemir"
+position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+address: "Bowling Green, Ohio, USA"
+phone: "+1 607 262 6875"
+email: "deniz.akdemir.work@gmail.com"
+github: "denizakdemir"
+linkedin: "deniz-akdemir-50735314a"
+www: "denizakdemir.github.io"
+date: "`r format(Sys.Date(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    keep_tex: true
+    includes:
+      in_header: "../../styles/header_include.tex"
+csl: "../../csl/apa6-cv.csl"
+---
+
 # Professional Profile
 
 Deniz Akdemir is a renowned researcher in statistical genomics and computational biology with over 3,400 citations for his groundbreaking work in genomic selection methodologies. His research has fundamentally advanced plant breeding through innovative approaches to training set optimization, genomic prediction models, and breeding program design. His most influential publications include "Genomic Selection and Association Mapping in Rice" (626 citations) and "Integrating environmental covariates and crop modeling" (424 citations). He has developed specialized software tools including TrainSel (R) and trainselpy (Python) that implement his methodologies for optimal selection of training populations. At the National Marrow Donor Program, he now applies his genomic expertise to clinical applications in stem cell transplantation.
@@ -60,13 +79,13 @@ library(visNetwork)
 - **Multi-omics Integration:** Statistical methods for combining heterogeneous genomic and phenotypic datasets, integration of environmental covariates, multi-objective optimized breeding strategies.
 - **Bioinformatics & Computational Biology:** Design of optimal training populations for selective phenotyping, genetic algorithm applications in genomics, machine learning approaches for genomic prediction.
 - **Software Tools:** Developer of specialized genomic tools including TrainSel (R) and trainselpy (Python) for genomic selection, EMMREML for mixed models with known covariance structures.
-- **Programming & Data Analysis:** Advanced R programming for genomic data analysis, Python for bioinformatics pipelines, proficient in high-performance computing for large-scale genomic datasets.
+- **Programming & Data Analysis:** Expert in R and Python for genomic data analysis and bioinformatics pipelines, proficient in SAS and C++ for high-performance computing with large-scale genomic datasets.
 - **Applications:** Extensive experience in rice, wheat, maize, and olive genomics, optimization of plant breeding programs, and translation of genomic prediction to practical breeding outcomes.
 
 
 # Career Summary
--   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
--   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
+- **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
+- **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
 - **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** Conducted research on methods for combining heterogeneous genomic and phenotypic datasets and prepared statistical software for data analysis.
 - **Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):** Provided statistical consulting services for researchers at Cornell University, including the preparation and presentation of statistics workshops.
 - **Postdoctoral Research Associate, Department of Plant Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 - 2017):** Focused on research developing new methodologies in genomic selection and prediction, mixed models, and machine learning, advising graduate students and preparing statistical software.
@@ -112,12 +131,6 @@ library(visNetwork)
 
 2. **Akdemir, D.** (2015). EMMREML: Fitting Mixed Models with Known Covariance Structures. R package version 3.1. https://CRAN.R-project.org/package=EMMREML
 
-# Education
-
-- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.  
-- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.  
-- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
-- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
 
 # Professional References
 

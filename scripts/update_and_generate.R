@@ -142,6 +142,7 @@ if (!is.null(publications)) {
 
 # Define paths to CV templates
 templates <- c(
+  original = "original/Vitae0.Rmd",
   general = "templates/general/Vitae_General.Rmd",
   statistics = "templates/statistics/Vitae_Statistics.Rmd",
   genomics = "templates/genomics/Vitae_Genomics.Rmd",
@@ -163,32 +164,17 @@ for (name in names(templates)) {
   
   params <- list(bib_file = bib_file)
   
-  # First try to generate PDF output
+  # Generate using the template's own format specification
   tryCatch({
     rmarkdown::render(
       input = templates[[name]],
       output_dir = output_dir,
-      output_format = "pdf_document",
       quiet = TRUE,
       params = params
     )
-    cat(sprintf("%s PDF generated successfully\n", name))
+    cat(sprintf("%s CV generated successfully\n", name))
   }, error = function(e) {
-    cat(sprintf("Error generating %s PDF: %s\n", name, e$message))
-  })
-  
-  # Then generate HTML output
-  tryCatch({
-    rmarkdown::render(
-      input = templates[[name]],
-      output_dir = output_dir,
-      output_format = "html_document",
-      quiet = TRUE,
-      params = params
-    )
-    cat(sprintf("%s HTML generated successfully\n", name))
-  }, error = function(e) {
-    cat(sprintf("Error generating %s HTML: %s\n", name, e$message))
+    cat(sprintf("Error generating %s CV: %s\n", name, e$message))
   })
 }
 

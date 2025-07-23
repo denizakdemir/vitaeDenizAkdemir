@@ -1,3 +1,22 @@
+---
+graphics: yes
+name: "Dr. Deniz Akdemir"
+position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+address: "Bowling Green, Ohio, USA"
+phone: "+1 607 262 6875"
+email: "deniz.akdemir.work@gmail.com"
+github: "denizakdemir"
+linkedin: "deniz-akdemir-50735314a"
+www: "denizakdemir.github.io"
+date: "`r format(Sys.Date(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    keep_tex: true
+    includes:
+      in_header: "../../styles/header_include.tex"
+csl: "../../csl/apa6-cv.csl"
+---
+
 # Professional Profile
 
 Deniz Akdemir is a data scientist and statistician with extensive experience in statistical genomics, machine learning, and computational biology. With over 3,400 citations on Google Scholar and 86 publications, he is known for developing innovative statistical methods and computational tools that solve complex biological and clinical problems. As the owner of StatGen Consulting and a Senior Clinical Data Scientist at the National Marrow Donor Program, he bridges sophisticated statistical theory with practical applications in genomics, machine learning, and healthcare.
@@ -48,14 +67,14 @@ library(visNetwork)
 - **Statistical Analysis:** Multivariate analysis, high-dimensional data modeling, Bayesian methods, experimental design, biostatistics, time series analysis, causal inference, predictive modeling.
 - **Statistical Genomics:** Genomic selection, multi-trait methodologies, genomic prediction, GWAS, models for epistasis, genotype-by-environment interactions, optimization of breeding programs.
 - **Data Science & Machine Learning:** Data mining, exploratory analysis, feature engineering, predictive modeling, supervised and unsupervised learning algorithms, deep learning applications.
-- **Programming & Tools:** Advanced R programming (package development), Python (NumPy, Pandas, scikit-learn), SAS, C++, SQL, version control with Git.
+- **Programming & Tools:** Expert in R (package development) and Python (NumPy, Pandas, scikit-learn), proficient in SAS and C++, SQL, version control with Git.
 - **Software Development:** Creator of research and commercial-grade software packages including TrainSel (R) and trainselpy (Python) for optimal selection of training populations.
 - **Leadership & Management:** Project leadership, team management, scientific writing, grant/patent applications, stakeholder communication, budget administration.
 
 
 # Career Summary
--   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
--   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
+- **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
+- **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
 - **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** Conducted research on methods for combining heterogeneous genomic and phenotypic datasets and prepared statistical software for data analysis.
 - **Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):** Provided statistical consulting services for researchers at Cornell University, including the preparation and presentation of statistics workshops.
 - **Postdoctoral Research Associate, Department of Plant Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 - 2017):** Focused on research developing new methodologies in genomic selection and prediction, mixed models, and machine learning, advising graduate students and preparing statistical software.
@@ -99,12 +118,6 @@ library(visNetwork)
 
 10. **Akdemir, D.**, Isidro-Sánchez, J., & Leyer, M. (2020). Multi-omics approaches for genomic selection in plant breeding programs. *Journal of Experimental Botany*, 71(18), 5215-5226.
 
-# Education
-
-- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
-- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
-- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
-- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
 
 # Professional References
 

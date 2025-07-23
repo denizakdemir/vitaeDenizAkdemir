@@ -1,14 +1,15 @@
 ---
 graphics: yes
 name: "Dr. Deniz Akdemir"
-position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+position: "Principal Biostatistician & Machine Learning Scientist"
 address: "Bowling Green, Ohio, USA"
 phone: "+1 607 262 6875"
 email: "deniz.akdemir.work@gmail.com"
 github: "denizakdemir"
 linkedin: "deniz-akdemir-50735314a"
 www: "denizakdemir.github.io"
-date: "`r format(Sys.Date(), '%B %Y')`"
+orcid: "0000-0003-0553-6798"
+date: "July 2025"
 output: 
   vitae::moderncv:
     keep_tex: true
@@ -19,7 +20,7 @@ csl: "../../csl/apa6-cv.csl"
 
 # Professional Profile
 
-Deniz Akdemir is a seasoned leader with a proven track record in research management, strategic planning, and operational excellence in academic and clinical environments. As the owner of StatGen Consulting and Senior Clinical Data Scientist at the National Marrow Donor Program, he combines analytical expertise with visionary leadership to drive innovation and organizational growth. With a background spanning academic positions at Cornell University and University College Dublin, he has demonstrated excellence in project management, team leadership, and strategic decision-making. His success in securing funding, publishing high-impact research (86 publications with 30,000+ reads), and developing commercial-grade software showcases his ability to transform scientific expertise into practical business outcomes.
+Dr. Deniz Akdemir is a Principal Biostatistician & Machine Learning Scientist with 3,400+ Google Scholar citations and proven executive leadership in research management and strategic planning. As founder of StatGen Consulting and senior leader at the National Marrow Donor Program, he combines deep analytical expertise with visionary leadership to drive innovation and organizational growth. His success includes securing substantial funding, publishing high-impact research, and developing commercial-grade CRAN packages (CovCombR, TrainSel, STPGA) that transform scientific expertise into practical business outcomes.
 
 # Core Competencies
 
@@ -29,23 +30,12 @@ Deniz Akdemir is a seasoned leader with a proven track record in research manage
 - Data-Driven Strategy
 - Stakeholder & Board Relations
 
-# Professional Experience
-
-- **Senior Clinical Data Scientist & Team Lead**, National Marrow Donor Program (2023 - Current)  
-  Lead strategic research initiatives in donor optimization, managing cross-functional teams of data scientists and clinicians. Direct grant acquisition strategy and patent application development, significantly expanding the organization's intellectual property portfolio.
-- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)  
-  Developed and implemented advanced analytics strategies for stem cell transplant data, establishing new departmental standards for data analysis. Oversaw transition to machine learning-based predictive models, improving operational decision-making processes.
-- **Founder & Principal Consultant**, StatGen Consulting (2017 - Present)  
-  Founded and grew a specialized statistical genomics consulting firm serving international clients across academic and commercial sectors. Directed all business operations including client acquisition, project management, and service delivery.
-- **Research Team Leader**, University College Dublin (2019 - 2021)  
-  Led international research collaborations on combining heterogeneous genomic and phenotypic datasets, managing both technical and administrative aspects of multi-institution projects. Secured funding for continuing research initiatives.
-
 # Education
 
-- **PhD. in Statistics**, Bowling Green State University (2009)
-- **M.A. in Applied Statistics**, Bowling Green State University (2004)
-- **M.S. in Statistics**, Middle East Technical University (2003)
-- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
+- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
+- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
+- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
+- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey (1994-1999).
 
 # Leadership & Achievements
 
@@ -60,22 +50,22 @@ Deniz Akdemir is a seasoned leader with a proven track record in research manage
 
 # Collaboration Network
 
-```{r coauthor_network,  message=FALSE, warning=FALSE, echo=FALSE}
+```{r coauthor_network, message=FALSE, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4}
 library(scholar)
 library(igraph)
 library(visNetwork)
-  if (Sys.getenv("SCHOLAR_ID") == "") {
+if (Sys.getenv("SCHOLAR_ID") == "") {
   scholar_id <- 'O_xha20AAAAJ'
-  } else {
+} else {
   # Get Google Scholar ID from environment variable
   scholar_id <- Sys.getenv("SCHOLAR_ID")
-  }
+}
+
+if(nchar(scholar_id) > 0) {
+  coauthors <- scholar::get_coauthors(scholar_id)
   
-  if(nchar(scholar_id) > 0) {
-    coauthors <- scholar::get_coauthors(scholar_id)
-    
-    plot_coauthors(coauthors)
-  }
+  plot_coauthors(coauthors)
+}
 ```
 
 # Core Skills
@@ -139,13 +129,6 @@ library(visNetwork)
 2. **Akdemir, D.**, Isidro-Sánchez, J., & Leyer, M. (2020). Multi-omics approaches for genomic selection in plant breeding programs. *Journal of Experimental Botany*, 71(18), 5215-5226.
 
 3. **Akdemir, D.** & Isidro-Sánchez, J. (2021). Training set optimization for sparse phenotyping in genomic selection. *G3: Genes, Genomes, Genetics*, 11(10), jkab249. (32 citations)
-
-# Education
-
-- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
-- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
-- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
-- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
 
 # Professional References
 

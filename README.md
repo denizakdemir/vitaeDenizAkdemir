@@ -48,6 +48,7 @@ The simplest way to update all CVs and bibliography at once is to use the compre
 Rscript scripts/update_and_generate.R
 ```
 
+
 This will:
 1. Update the bibliography from Google Scholar
 2. Regenerate all CV variants (both PDF and HTML)

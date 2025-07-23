@@ -1,14 +1,15 @@
 ---
 graphics: yes
 name: "Dr. Deniz Akdemir"
-position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+position: "Principal Biostatistician & Machine Learning Scientist"
 address: "Bowling Green, Ohio, USA"
 phone: "+1 607 262 6875"
 email: "deniz.akdemir.work@gmail.com"
 github: "denizakdemir"
 linkedin: "deniz-akdemir-50735314a"
 www: "denizakdemir.github.io"
-date: "`r format(Sys.Date(), '%B %Y')`"
+orcid: "0000-0003-0553-6798"
+date: "July 2025"
 output: 
   vitae::moderncv:
     keep_tex: true
@@ -44,7 +45,7 @@ library(vitae)
 - **Genomic Assisted Breeding Workshops:** Conducted workshops in the USA, Ireland, Spain, and Belgium, educating the agricultural community on genomic technologies.
 - **Public Speaking:** Presented at various international conferences including EFI conference in Geneva and ASHI Annual Meeting in San Antonio.
 
-# Publications
+# Selected Publications
 
 ```{r references, echo=FALSE, as.is=TRUE}
 vitae::bibliography_entries("../data/DA_bibliography.bib")
@@ -55,7 +56,7 @@ vitae::bibliography_entries("../data/DA_bibliography.bib")
 - **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
 - **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
 - **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
-- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
+- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey (1994-1999).
 
 # Professional References
 

@@ -1,14 +1,15 @@
 ---
 graphics: yes
 name: "Dr. Deniz Akdemir"
-position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+position: "Principal Biostatistician & Machine Learning Scientist"
 address: "Bowling Green, Ohio, USA"
 phone: "+1 607 262 6875"
 email: "deniz.akdemir.work@gmail.com"
 github: "denizakdemir"
 linkedin: "deniz-akdemir-50735314a"
 www: "denizakdemir.github.io"
-date: "`r format(Sys.Date(), '%B %Y')`"
+orcid: "0000-0003-0553-6798"
+date: "July 2025"
 output: 
   vitae::moderncv:
     keep_tex: true
@@ -19,7 +20,7 @@ csl: "../../csl/apa6-cv.csl"
 
 # Professional Profile
 
-Deniz Akdemir is a data scientist and statistician with extensive experience in statistical genomics, machine learning, and computational biology. With over 3,400 citations on Google Scholar and 86 publications, he is known for developing innovative statistical methods and computational tools that solve complex biological and clinical problems. As the owner of StatGen Consulting and a Senior Clinical Data Scientist at the National Marrow Donor Program, he bridges sophisticated statistical theory with practical applications in genomics, machine learning, and healthcare.
+Dr. Deniz Akdemir is a Principal Biostatistician & Machine Learning Scientist with 3,400+ Google Scholar citations and extensive expertise in statistical genomics, machine learning, and computational biology. As maintainer of multiple CRAN packages (CovCombR, TrainSel, STPGA) and founder of StatGen Consulting, he bridges sophisticated statistical theory with practical applications in genomics and healthcare at the National Marrow Donor Program.
 
 # Core Competencies
 
@@ -29,37 +30,31 @@ Deniz Akdemir is a data scientist and statistician with extensive experience in 
 - Data visualization and communication
 - Collaborative research leadership
 
-# Professional Experience
-
-- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)
-- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)
-- **Postdoctoral Research Associate**, University College Dublin (2019 - 2021)
-
 # Education
 
-- **PhD. in Statistics**, Bowling Green State University (2009)
-- **M.A. in Applied Statistics**, Bowling Green State University (2004)
-- **M.S. in Statistics**, Middle East Technical University (2003)
-- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
+- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
+- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
+- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
+- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey (1994-1999).
 
 # Collaboration Network
 
-```{r coauthor_network,  message=FALSE, warning=FALSE, echo=FALSE}
+```{r coauthor_network, message=FALSE, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4}
 library(scholar)
 library(igraph)
 library(visNetwork)
-  if (Sys.getenv("SCHOLAR_ID") == "") {
+if (Sys.getenv("SCHOLAR_ID") == "") {
   scholar_id <- 'O_xha20AAAAJ'
-  } else {
+} else {
   # Get Google Scholar ID from environment variable
   scholar_id <- Sys.getenv("SCHOLAR_ID")
-  }
+}
+
+if(nchar(scholar_id) > 0) {
+  coauthors <- scholar::get_coauthors(scholar_id)
   
-  if(nchar(scholar_id) > 0) {
-    coauthors <- scholar::get_coauthors(scholar_id)
-    
-    plot_coauthors(coauthors)
-  }
+  plot_coauthors(coauthors)
+}
 ```
 
 # Core Skills

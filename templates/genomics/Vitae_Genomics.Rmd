@@ -1,14 +1,15 @@
 ---
 graphics: yes
 name: "Dr. Deniz Akdemir"
-position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+position: "Principal Biostatistician & Machine Learning Scientist"
 address: "Bowling Green, Ohio, USA"
 phone: "+1 607 262 6875"
 email: "deniz.akdemir.work@gmail.com"
 github: "denizakdemir"
 linkedin: "deniz-akdemir-50735314a"
 www: "denizakdemir.github.io"
-date: "`r format(Sys.Date(), '%B %Y')`"
+orcid: "0000-0003-0553-6798"
+date: "July 2025"
 output: 
   vitae::moderncv:
     keep_tex: true
@@ -19,7 +20,7 @@ csl: "../../csl/apa6-cv.csl"
 
 # Professional Profile
 
-Deniz Akdemir is a renowned researcher in statistical genomics and computational biology with over 3,400 citations for his groundbreaking work in genomic selection methodologies. His research has fundamentally advanced plant breeding through innovative approaches to training set optimization, genomic prediction models, and breeding program design. His most influential publications include "Genomic Selection and Association Mapping in Rice" (626 citations) and "Integrating environmental covariates and crop modeling" (424 citations). He has developed specialized software tools including TrainSel (R) and trainselpy (Python) that implement his methodologies for optimal selection of training populations. At the National Marrow Donor Program, he now applies his genomic expertise to clinical applications in stem cell transplantation.
+Dr. Deniz Akdemir is a Principal Biostatistician & Machine Learning Scientist with 3,400+ Google Scholar citations and pioneering expertise in statistical genomics. His highly-cited publications, including "Genomic Selection and Association Mapping in Rice" (626 citations), have revolutionized plant breeding methodologies. As maintainer of multiple CRAN packages (CovCombR, TrainSel, STPGA), he develops cutting-edge genomic tools now applied to clinical stem cell transplantation at the National Marrow Donor Program.
 
 # Core Competencies
 
@@ -29,25 +30,12 @@ Deniz Akdemir is a renowned researcher in statistical genomics and computational
 - High-Throughput Sequencing Analysis
 - Data Visualization & Scientific Communication
 
-# Professional Experience
-
-- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)  
-  Leading integration of genomic methodologies into clinical transplant research, developing statistical frameworks for donor-recipient genomic matching and optimization algorithms based on genetic compatibility measures.
-- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)  
-  Adapted plant genomics statistical methods to human transplant genomics, creating novel predictive models and selection algorithms for optimal donor identification.
-- **Genomics Software Developer**, Open-Source Community (2015 - Present)  
-  Created and maintained the TrainSel R package and trainselpy Python package for optimal selection of training populations in genomic prediction, tools widely used in agricultural research.
-- **Genomics Researcher**, University College Dublin (2019 - 2021)  
-  Conducted innovative research on genomic selection methodologies, leading projects on combining heterogeneous genomic and phenotypic datasets with significant impact on breeding program strategies.
-- **Statistical Genomics Expert**, Cornell University (2011 - 2019)  
-  Pioneered statistical methods for genomic selection in plant breeding, publishing seminal papers on training set optimization, genomic prediction models, and environmental covariate integration.
-
 # Education
 
-- **PhD. in Statistics**, Bowling Green State University (2009)  
-- **M.A. in Applied Statistics**, Bowling Green State University (2004)  
-- **M.S. in Statistics**, Middle East Technical University (2003)
-- **B.A. in Business Administration**, Middle East Technical University (1999)
+- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
+- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
+- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
+- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey (1994-1999).
 
 # Research Interests
 
@@ -55,22 +43,22 @@ Deniz's research is centered on developing innovative statistical methodologies 
 
 # Collaboration Network
 
-```{r coauthor_network,  message=FALSE, warning=FALSE, echo=FALSE}
+```{r coauthor_network, message=FALSE, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4}
 library(scholar)
 library(igraph)
 library(visNetwork)
-  if (Sys.getenv("SCHOLAR_ID") == "") {
+if (Sys.getenv("SCHOLAR_ID") == "") {
   scholar_id <- 'O_xha20AAAAJ'
-  } else {
+} else {
   # Get Google Scholar ID from environment variable
   scholar_id <- Sys.getenv("SCHOLAR_ID")
-  }
+}
+
+if(nchar(scholar_id) > 0) {
+  coauthors <- scholar::get_coauthors(scholar_id)
   
-  if(nchar(scholar_id) > 0) {
-    coauthors <- scholar::get_coauthors(scholar_id)
-    
-    plot_coauthors(coauthors)
-  }
+  plot_coauthors(coauthors)
+}
 ```
 
 # Core Skills
@@ -125,11 +113,18 @@ library(visNetwork)
 
 8. **Akdemir, D.**, Isidro-Sánchez, J., & Leyer, M. (2020). Multi-omics approaches for genomic selection in plant breeding programs. *Journal of Experimental Botany*, 71(18), 5215-5226.
 
-**Genomics Software:**
+# Software Development
 
-1. **Akdemir, D.** & Beavis, W. D. (2021). TrainSel: an R package for selection of training populations. *BMC Bioinformatics*, 22(1), 1-10. (33 citations)
+**CRAN Packages:**
 
-2. **Akdemir, D.** (2015). EMMREML: Fitting Mixed Models with Known Covariance Structures. R package version 3.1. https://CRAN.R-project.org/package=EMMREML
+1. **CovCombR** (Maintainer) - Covariance-Based Combination Methods for Linear Regression
+2. **TrainSel** - Selection of Training Populations for Genomic Prediction  
+3. **STPGA** - Selection of Training Populations by Genetic Algorithm
+
+**GitHub Packages:**
+
+1. **trainselpy** - Pure Python implementation for optimal training population selection
+2. **EMMREML** - Fitting Mixed Models with Known Covariance Structures
 
 
 # Professional References

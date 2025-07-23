@@ -1,14 +1,15 @@
 ---
 graphics: yes
 name: "Dr. Deniz Akdemir"
-position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+position: "Principal Biostatistician & Machine Learning Scientist"
 address: "Bowling Green, Ohio, USA"
 phone: "+1 607 262 6875"
 email: "deniz.akdemir.work@gmail.com"
 github: "denizakdemir"
 linkedin: "deniz-akdemir-50735314a"
 www: "denizakdemir.github.io"
-date: "`r format(Sys.Date(), '%B %Y')`"
+orcid: "0000-0003-0553-6798"
+date: "July 2025"
 output: 
   vitae::moderncv:
     keep_tex: true
@@ -19,7 +20,7 @@ csl: "../../csl/apa6-cv.csl"
 
 # Professional Profile
 
-Deniz Akdemir is a PhD statistician with advanced expertise in statistical methodology, experimental design, and complex data analysis. His highly-cited research (3,400+ citations) has established new statistical approaches for genomic prediction, mixed models, and high-dimensional data analysis. His career spans academic research and applied statistics across healthcare, agriculture, and clinical data analysis, where he leverages sophisticated quantitative methods to derive actionable insights from complex datasets. He is the creator of multiple statistical software packages including EMMREML and ml4t2e, which bridge traditional statistical theory with modern machine learning approaches.
+Dr. Deniz Akdemir is a Principal Biostatistician & Machine Learning Scientist with 3,400+ Google Scholar citations and deep expertise in advanced statistical methodology. His groundbreaking statistical research has established new approaches for genomic prediction, mixed models, and high-dimensional data analysis. As creator of multiple CRAN packages (CovCombR, TrainSel, STPGA) and statistical software tools, he bridges traditional statistical theory with modern machine learning applications in clinical and biological research.
 
 # Core Competencies
 
@@ -29,25 +30,12 @@ Deniz Akdemir is a PhD statistician with advanced expertise in statistical metho
 - Bayesian & Frequentist Methods
 - Data Visualization & Communication
 
-# Professional Experience
-
-- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)  
-  Lead complex statistical analyses of clinical transplant data, designing advanced statistical frameworks for stem cell transplant optimization, developing novel methodologies for time-to-event data analysis in clinical settings.
-- **Statistical Methods Developer**, Independent Research (2010 - Present)  
-  Created the EMMREML package for fitting mixed models with known covariance structures, developed novel statistical approaches for high-dimensional data analysis, pioneered methodologies for training set optimization in predictive modeling.
-- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)  
-  Applied rigorous statistical methodologies to patient outcome data, implemented Bayesian approaches to uncertainty quantification, developed predictive statistical models for clinical decision support.
-- **Statistical Consultant**, Cornell Statistical Consulting Unit (2017 - 2019)  
-  Provided expert statistical guidance to academic researchers across disciplines, designed experimental studies, performed complex data analyses, and delivered statistical training workshops.
-- **Statistical Methods Researcher**, University College Dublin & Cornell University (2011 - 2021)  
-  Conducted groundbreaking research in statistical methodologies for complex data structures, published extensively on novel statistical approaches, and developed computational tools for statistical analysis.
-
 # Education
 
-- **PhD. in Statistics**, Bowling Green State University (2009)  
-- **M.A. in Applied Statistics**, Bowling Green State University (2004)  
-- **M.S. in Statistics**, Middle East Technical University (2003)
-- **B.A. in Business Administration**, Middle East Technical University (1999)
+- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
+- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
+- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
+- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey (1994-1999).
 
 # Research Interests
 
@@ -55,22 +43,22 @@ Deniz's research focuses on the development and application of advanced statisti
 
 # Collaboration Network
 
-```{r coauthor_network,  message=FALSE, warning=FALSE, echo=FALSE}
+```{r coauthor_network, message=FALSE, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4}
 library(scholar)
 library(igraph)
 library(visNetwork)
-  if (Sys.getenv("SCHOLAR_ID") == "") {
+if (Sys.getenv("SCHOLAR_ID") == "") {
   scholar_id <- 'O_xha20AAAAJ'
-  } else {
+} else {
   # Get Google Scholar ID from environment variable
   scholar_id <- Sys.getenv("SCHOLAR_ID")
-  }
+}
+
+if(nchar(scholar_id) > 0) {
+  coauthors <- scholar::get_coauthors(scholar_id)
   
-  if(nchar(scholar_id) > 0) {
-    coauthors <- scholar::get_coauthors(scholar_id)
-    
-    plot_coauthors(coauthors)
-  }
+  plot_coauthors(coauthors)
+}
 ```
 
 # Core Skills
@@ -120,17 +108,23 @@ library(visNetwork)
 
 5. **Akdemir, D.** & Isidro-Sánchez, J. (2019). Multi-objective optimized genomic breeding strategies for sustainable food improvement. *Heredity*, 122(5), 672-683. (103 citations)
 
-**Statistical Methods & Software:**
+# Software Development
 
-1. **Akdemir, D.** (2015). EMMREML: Fitting Mixed Models with Known Covariance Structures. *R package version 3.1*. https://CRAN.R-project.org/package=EMMREML (87 citations)
+## CRAN Packages
 
-2. **Akdemir, D.** (2011). Array variate random variables with multiway kronecker delta covariance matrix structure. *Journal of Multivariate Analysis*, 102(5), 798-806. (52 citations)
+**CovCombR** - Statistical methods for covariance combination and integration in high-dimensional genomic data analysis.
 
-3. **Akdemir, D.** & Gupta, A. K. (2011). Array variate random variables with multiway kronecker delta covariance matrix structure. *Journal of Algebraic Statistics*, 2(1), 98-113.
+**TrainSel** - An R package for optimal selection of training populations in genomic prediction. Implements advanced algorithms for training set optimization under population structure.
 
-4. **Akdemir, D.** & Hames, K. (2016). Locally epistatic genomic relationship matrices for genomic association and prediction. *Journal of Quantitative Genetics and Genomics*, 1(2), 45-55.
+**STPGA** - Stochastic training population genetic algorithm for optimized genomic selection breeding programs.
 
-5. **Akdemir, D.** & Beavis, W. D. (2021). TrainSel: an R package for selection of training populations. *BMC Bioinformatics*, 22(1), 1-10. (33 citations)
+## GitHub Packages
+
+**trainselpy** - Python implementation of training set selection algorithms for machine learning applications in genomics and breeding.
+
+**EMMREML** - Efficient fitting of mixed models with known covariance structures, optimized for large-scale genomic datasets and complex statistical applications.
+
+**ml4t2e** - Machine learning framework for time-to-event data analysis, bridging survival analysis with modern machine learning techniques for clinical and biological applications.
 
 # Education
 

@@ -1,14 +1,15 @@
 ---
 graphics: yes
 name: "Dr. Deniz Akdemir"
-position: "Senior Clinical Data Scientist - Statistical Genomics Consultant"
+position: "Principal Biostatistician & Machine Learning Scientist"
 address: "Bowling Green, Ohio, USA"
 phone: "+1 607 262 6875"
 email: "deniz.akdemir.work@gmail.com"
 github: "denizakdemir"
 linkedin: "deniz-akdemir-50735314a"
 www: "denizakdemir.github.io"
-date: "`r format(Sys.Date(), '%B %Y')`"
+orcid: "0000-0003-0553-6798"
+date: "July 2025"
 output: 
   vitae::moderncv:
     keep_tex: true
@@ -19,33 +20,23 @@ csl: "../../csl/apa6-cv.csl"
 
 # Professional Profile
 
-Deniz Akdemir is an AI/ML specialist with extensive experience in machine learning, data analytics, and computational intelligence. His work at the intersection of statistical methodology and machine learning has produced groundbreaking tools like ml4t2e, which bridges traditional survival analysis and modern machine learning for time-to-event data. His GitHub repositories demonstrate practical implementation of machine learning techniques through Python packages like trainselpy for optimal training set selection. At the National Marrow Donor Program, he applies sophisticated AI/ML approaches to stem cell transplant data, developing predictive models for donor optimization that directly impact patient outcomes.
+Dr. Deniz Akdemir is a Principal Biostatistician & Machine Learning Scientist with over 3,400+ Google Scholar citations and expertise in developing AI/ML solutions for clinical applications. He leads machine learning initiatives at the National Marrow Donor Program, creating predictive models for stem cell transplant optimization. As maintainer of multiple CRAN packages (CovCombR, TrainSel, STPGA) and active Kaggle competitor, he bridges statistical theory with practical ML implementation to solve complex biomedical challenges.
 
 # Core Competencies
 
-- Machine Learning & Deep Learning
+- Machine Learning & Deep Learning (PyTorch, TensorFlow, scikit-learn)
+- Generative Models & GANs for Synthetic Clinical Data
 - Data Analytics and Visualization
-- Algorithm Development
-- Statistical Modeling
-- Research & Innovation
-
-# Professional Experience
-
-- **Senior Clinical Data Scientist**, National Marrow Donor Program (2023 - Current)  
-  Leading machine learning initiatives for donor-recipient matching optimization using advanced predictive models and deep learning approaches for clinical outcome prediction.
-- **Clinical Data Scientist**, National Marrow Donor Program (2021 - 2023)  
-  Applied statistical and machine learning methods to stem cell transplant data, developing novel algorithms for patient outcome prediction and donor selection optimization.
-- **Open Source ML Developer**, GitHub (2019 - Present)  
-  Developed ml4t2e (Machine Learning for Time-to-Event) package that bridges traditional survival analysis with modern machine learning approaches and trainselpy for optimizing training populations using Python.
-- **ML & AI Researcher**, University College Dublin (2019 - 2021)  
-  Researched machine learning applications for heterogeneous data integration, developing novel algorithms for combining genomic and phenotypic datasets.
+- Algorithm Development & Optimization
+- Statistical Modeling & Inference
+- Competitive ML & Kaggle Experience
 
 # Education
 
-- **PhD. in Statistics**, Bowling Green State University (2009)
-- **M.A. in Applied Statistics**, Bowling Green State University (2004)
-- **M.S. in Statistics**, Middle East Technical University (2003)
-- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey, 1999.
+- **PhD. in Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2009.
+- **M.A. in Applied Statistics**, Bowling Green State University, Bowling Green, OH, USA, 2004.
+- **M.S. in Statistics**, Middle East Technical University, Ankara, Turkey, 2003.
+- **B.A. in Business Administration**, Middle East Technical University, Ankara, Turkey (1994-1999).
 
 # Research Interests
 
@@ -53,37 +44,51 @@ Deniz's research focuses on integrating statistical methods with machine learnin
 
 # Collaboration Network
 
-```{r coauthor_network,  message=FALSE, warning=FALSE, echo=FALSE}
+```{r coauthor_network, message=FALSE, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4}
 library(scholar)
 library(igraph)
 library(visNetwork)
-  if (Sys.getenv("SCHOLAR_ID") == "") {
+if (Sys.getenv("SCHOLAR_ID") == "") {
   scholar_id <- 'O_xha20AAAAJ'
-  } else {
+} else {
   # Get Google Scholar ID from environment variable
   scholar_id <- Sys.getenv("SCHOLAR_ID")
-  }
-  
-  if(nchar(scholar_id) > 0) {
-    coauthors <- scholar::get_coauthors(scholar_id)
-    
-    plot_coauthors(coauthors)
-  }
+}
 
+if(nchar(scholar_id) > 0) {
+  coauthors <- scholar::get_coauthors(scholar_id)
+  
+  plot_coauthors(coauthors)
+}
 ```
 
 # Core Skills
 
-- **Machine Learning & AI:** Deep learning architectures, neural networks, reinforcement learning, natural language processing, computer vision, predictive modeling, feature engineering, ensemble methods.
-- **Statistical Methods:** Multivariate analysis, Bayesian methods, time series analysis, high-dimensional data modeling, anomaly detection, classification algorithms.
-- **Data Science:** Data mining, exploratory data analysis, A/B testing, experimental design, causal inference, predictive modeling, data visualization.
-- **Programming & Tools:** Expert in R and Python (NumPy, Pandas, PyTorch, TensorFlow, scikit-learn), proficient in SAS and C++, SQL, cloud computing (AWS, Azure), big data technologies (Spark).
-- **Applied Research:** Clinical data analysis, genomic data integration, algorithm development, optimization techniques, model deployment, interpretability methods.
+**Statistical Methods:**
+- Advanced multivariate analysis, Bayesian methods, time series analysis, high-dimensional data modeling, survival analysis, mixed models, experimental design
+
+**Machine Learning & AI:**
+- Deep Learning Frameworks: PyTorch, TensorFlow, scikit-learn
+- Generative Models: GANs for synthetic clinical data generation
+- Neural networks, reinforcement learning, natural language processing, computer vision
+- Ensemble methods, feature engineering, model interpretability
+
+**Programming Languages & Tools:**
+- Expert in R and Python (NumPy, Pandas, PyTorch, TensorFlow, scikit-learn)
+- Proficient in SAS and C++, SQL, Docker containerization
+- Cloud computing (AWS, Azure), big data technologies (Spark)
+- Version control (Git), package development (CRAN)
+
+**Domain Expertise:**
+- Clinical data analysis, genomic data integration, biostatistics
+- Stem cell transplantation optimization, predictive modeling
+- Competitive ML (Kaggle experience), algorithm development
+- Patent applications, grant writing, scientific publication
 
 
 # Career Summary
--   **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Current):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
--   **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
+- **Senior Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2023 - Present):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization. Applied for grants and submitted manuscripts to peer-reviewed journals. Wrote patent applications.
+- **Clinical Data Scientist, National Marrow Donor Program, Minneapolis, USA (2021 - 2023):** Engaged in statistical and machine learning analysis of stem cell transplant data, focusing on research into donor optimization.
 - **Postdoctoral Research Associate, School of Agriculture and Food Science, University College Dublin, Dublin, Ireland (2019 - 2021):** Conducted research on methods for combining heterogeneous genomic and phenotypic datasets and prepared statistical software for data analysis.
 - **Statistical Consultant, Cornell Statistical Consulting Unit, Cornell University, Ithaca, NY, USA (2017 - 2019):** Provided statistical consulting services for researchers at Cornell University, including the preparation and presentation of statistics workshops.
 - **Postdoctoral Research Associate, Department of Plant Breeding and Genetics, Cornell University, Ithaca, NY, USA (2011 - 2017):** Focused on research developing new methodologies in genomic selection and prediction, mixed models, and machine learning, advising graduate students and preparing statistical software.
@@ -119,11 +124,26 @@ library(visNetwork)
 
 6. **Akdemir, D.**, Isidro-Sánchez, J., & Leyer, M. (2020). Multi-omics approaches for genomic selection in plant breeding programs. *Journal of Experimental Botany*, 71(18), 5215-5226.
 
-**Software Development Publications:**
+# Software Development
 
-1. **Akdemir, D.** (2022). ml4t2e: Machine Learning for Time-to-Event. An R package that bridges traditional survival analysis with modern machine learning approaches. https://github.com/denizakdemir/ml4t2e
+**CRAN Packages:**
 
-2. **Akdemir, D.** (2022). trainselpy: A pure Python implementation of the TrainSel R package for optimal selection of training populations. https://github.com/denizakdemir/trainselpy
+1. **CovCombR** (Maintainer) - Covariance-Based Combination Methods for Linear Regression
+   https://CRAN.R-project.org/package=CovCombR
+
+2. **TrainSel** - Selection of Training Populations for Genomic Prediction
+   https://CRAN.R-project.org/package=TrainSel
+
+3. **STPGA** - Selection of Training Populations by Genetic Algorithm
+   https://CRAN.R-project.org/package=STPGA
+
+**GitHub Packages:**
+
+1. **trainselpy** - Pure Python implementation for optimal training population selection
+   https://github.com/denizakdemir/trainselpy
+
+2. **ml4t2e** (In Development) - Machine Learning for Time-to-Event Analysis
+   https://github.com/denizakdemir/ml4t2e
 
 # Professional References
 
